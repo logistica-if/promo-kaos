@@ -1,0 +1,1410 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#3b1a78">
+
+<title>Promo KAOS · Egreso 2026</title>
+<script src="config.js"></script>
+<style>
+@font-face{font-family:"Playfair Display";font-weight:500;font-display:swap;src:url(lib/fonts/playfair-display-latin-500-normal.woff2) format("woff2"),url(playfair-display-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Playfair Display";font-weight:600;font-display:swap;src:url(lib/fonts/playfair-display-latin-600-normal.woff2) format("woff2"),url(playfair-display-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Playfair Display";font-weight:700;font-display:swap;src:url(lib/fonts/playfair-display-latin-700-normal.woff2) format("woff2"),url(playfair-display-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Playfair Display";font-weight:800;font-display:swap;src:url(lib/fonts/playfair-display-latin-800-normal.woff2) format("woff2"),url(playfair-display-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:"Playfair Display";font-weight:900;font-display:swap;src:url(lib/fonts/playfair-display-latin-900-normal.woff2) format("woff2"),url(playfair-display-latin-900-normal.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:400;font-display:swap;src:url(lib/fonts/inter-latin-400-normal.woff2) format("woff2"),url(inter-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:500;font-display:swap;src:url(lib/fonts/inter-latin-500-normal.woff2) format("woff2"),url(inter-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:600;font-display:swap;src:url(lib/fonts/inter-latin-600-normal.woff2) format("woff2"),url(inter-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:700;font-display:swap;src:url(lib/fonts/inter-latin-700-normal.woff2) format("woff2"),url(inter-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:Sacramento;font-weight:400;font-display:swap;src:url(lib/fonts/sacramento-latin-400-normal.woff2) format("woff2"),url(sacramento-latin-400-normal.woff2) format("woff2")}
+:root{
+  --bg:#f6efdf; --card:#fffcf5; --ink:#2a1552; --muted:#6f6488; --line:#e8dfcb;
+  --brand:#3b1a78; --brand2:#4d2a94; --accent:#b39ae8; --lila:#9b7fd6;
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif; --script:"Sacramento",cursive;
+  --ok:#128a4a; --ok-bg:#e3f6ea; --warn:#b76e00; --warn-bg:#fff3d6;
+  --bad:#c0262d; --bad-bg:#fde6e6; --info:#1d5fc4; --info-bg:#e5efff; --off:#8a8f9c; --off-bg:#eef0f3;
+  --r:12px; --sh:0 1px 2px rgba(16,24,40,.06),0 1px 3px rgba(16,24,40,.08);
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+button,input,select,textarea{font:inherit;color:inherit}
+a{color:var(--info)}
+.top{position:sticky;top:0;z-index:20;background:var(--brand);color:#fff;display:flex;align-items:center;gap:12px;padding:10px 16px;padding-top:max(10px,env(safe-area-inset-top))}
+.top .t1{font-family:var(--serif);font-weight:800;letter-spacing:1.5px;font-size:18px;text-transform:uppercase}
+.top .t2{font-size:12px;opacity:.75}
+.top .sp{flex:1}
+.top button{background:rgba(255,255,255,.12);border:0;color:#fff;padding:7px 12px;border-radius:8px;cursor:pointer}
+.tabs{position:sticky;top:52px;z-index:19;display:flex;gap:4px;overflow-x:auto;background:var(--brand2);padding:6px 12px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;background:transparent;border:0;color:#dcd0f5;padding:8px 12px;border-radius:8px;cursor:pointer;white-space:nowrap;font-weight:500}
+.tabs button.on{background:var(--bg);color:var(--brand)}
+.tabs .dot{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;background:#f3c24f;color:#2a1552;font-size:11px;margin-left:5px;text-align:center}
+main{max-width:1280px;margin:0 auto;padding:16px}
+h2{font-family:var(--serif);font-size:26px;font-weight:700;margin:6px 0 14px;color:var(--brand)}
+h3{font-family:var(--serif);font-size:18px;font-weight:700;margin:0 0 10px;color:var(--brand)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);padding:16px;margin-bottom:14px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.grid2{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px}
+.kpi .l{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px;font-weight:600}
+.kpi .v{font-family:var(--serif);color:var(--brand);font-size:28px;font-weight:800;font-variant-numeric:tabular-nums;margin-top:2px}
+.kpi.big .v{font-size:34px}
+.kpi.ok{border-color:#b9e4c9;background:var(--ok-bg)} .kpi.warn{border-color:#f3d596;background:var(--warn-bg)} .kpi.bad{border-color:#f3b4b4;background:var(--bad-bg)}
+.bar{display:flex;height:22px;border-radius:6px;overflow:hidden;background:#ebe3d1;margin:10px 0 6px}
+.bar span{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.btn{max-width:100%;display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--line);background:#fff;padding:8px 14px;border-radius:9px;cursor:pointer;font-weight:500;white-space:nowrap}
+.btn:hover{border-color:#c5cad4}
+.btn.p{background:var(--brand);border-color:var(--brand);color:#fff}
+.btn.ok{background:var(--ok);border-color:var(--ok);color:#fff}
+.btn.bad{background:#fff;border-color:#f0b5b5;color:var(--bad)}
+.btn.s{padding:5px 10px;font-size:13px;border-radius:7px}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.row.sb{justify-content:space-between}
+.muted{color:var(--muted)} .small{font-size:12.5px}
+.right{text-align:right}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+input,select,textarea{border:1px solid #d9cdb3;background:#fff;border-radius:8px;padding:9px 11px;width:100%;min-width:0}
+input:focus,select:focus,textarea:focus{outline:2px solid #cbb8f2;border-color:var(--lila)}
+label{display:block;font-size:13px;color:var(--muted);margin:0 0 4px}
+.f{margin-bottom:12px}
+.fg{display:grid;gap:0 12px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:10px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle;white-space:nowrap}
+th{background:#f3ecdc;font-size:12px;text-transform:uppercase;letter-spacing:.3px;color:var(--muted);position:sticky;top:0}
+tr:last-child td{border-bottom:0}
+td.wrap{white-space:normal;min-width:160px}
+.b{display:inline-block;padding:2px 8px;border-radius:20px;font-size:12px;font-weight:600}
+.b.pendiente{background:var(--warn-bg);color:var(--warn)} .b.pagado{background:var(--info-bg);color:var(--info)}
+.b.confirmado{background:var(--ok-bg);color:var(--ok)} .b.cancelado{background:var(--off-bg);color:var(--off)}
+.b.vencido{background:var(--bad-bg);color:var(--bad)} .b.rest{background:#efe6ff;color:#5b2bb0}
+.b.informado{background:var(--warn-bg);color:var(--warn)} .b.acreditado{background:var(--ok-bg);color:var(--ok)} .b.rechazado{background:var(--off-bg);color:var(--off)}
+.b.aprobada{background:var(--ok-bg);color:var(--ok)} .b.rechazada{background:var(--off-bg);color:var(--off)}
+.b.ing{background:#dff3ff;color:#075985}
+.list .it{display:flex;gap:10px;align-items:flex-start;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line)}
+.list .it:last-child{border-bottom:0}
+.it .n{font-weight:600}
+.empty{padding:26px;text-align:center;color:var(--muted)}
+.notice{padding:10px 12px;border-radius:9px;background:var(--info-bg);color:#123a7a;font-size:13.5px;margin-bottom:12px}
+.notice.warn{background:var(--warn-bg);color:#6b4200} .notice.bad{background:var(--bad-bg);color:#7a1116}
+/* modal */
+.ov{position:fixed;inset:0;background:rgba(10,15,30,.5);z-index:100;display:flex;align-items:flex-end;justify-content:center}
+@media(min-width:640px){.ov{align-items:center}}
+.md{background:var(--card);width:100%;max-width:560px;max-height:92vh;overflow:auto;border-radius:16px 16px 0 0;padding:18px 16px;padding-bottom:max(18px,env(safe-area-inset-bottom))}
+@media(min-width:640px){.md{border-radius:16px}}
+.md.w{max-width:900px}
+.md h3{font-size:18px;margin-bottom:14px}
+.md .acts{display:flex;gap:8px;justify-content:flex-end;margin-top:14px;flex-wrap:wrap}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#2a1552;color:#fff;padding:11px 16px;border-radius:10px;z-index:200;max-width:92vw;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.toast.err{background:var(--bad)}
+/* login estilo afiche */
+.poster-bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.poster-bg i{position:absolute;border-radius:50%;background:var(--brand)}
+.poster-bg i:nth-child(1){width:380px;height:300px;left:-140px;top:-150px;border-radius:40% 60% 55% 45%}
+.poster-bg i:nth-child(2){width:360px;height:300px;right:-150px;bottom:-160px;border-radius:55% 45% 40% 60%}
+.poster-bg b{position:absolute;border:2px solid var(--accent);border-radius:50%;width:430px;height:330px;left:-160px;top:-150px}
+.login{max-width:400px;margin:5vh auto;padding:0 16px}
+.login .logo{text-align:center;margin-bottom:18px;color:var(--brand)}
+.promo{font-family:var(--serif);font-size:26px;font-weight:600;letter-spacing:3px;display:flex;align-items:center;justify-content:center;gap:12px}
+.promo:before,.promo:after{content:"";width:34px;height:1.5px;background:var(--brand)}
+.kaos{font-family:var(--serif);font-weight:900;font-size:78px;line-height:.95;letter-spacing:2px;margin:2px 0 4px}
+.lema{font-family:var(--script);font-size:34px;line-height:1;color:var(--lila);margin-bottom:12px}
+.fechaev{font-family:var(--serif);font-weight:600;letter-spacing:2.5px;text-transform:uppercase;font-size:14.5px}
+.sep{display:flex;align-items:center;justify-content:center;gap:10px;color:var(--brand);margin:8px 0}
+.sep:before,.sep:after{content:"";width:60px;height:1.5px;background:var(--brand)}
+.card.ticketbox{border:1.5px solid var(--lila);border-radius:16px}
+/* check-in */
+.ci-search{display:flex;gap:8px;margin-bottom:12px}
+.ci-search input{font-size:18px;padding:13px 14px}
+.ci-search .btn{font-size:16px;padding:0 16px}
+.ci-card{border-radius:16px;padding:20px;border:2px solid var(--line);background:#fff;margin-bottom:12px}
+.ci-card .name{font-size:28px;font-weight:800;line-height:1.15;text-transform:uppercase;margin-bottom:10px}
+.ci-card .kv{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:18px}
+.ci-card .kv b{font-weight:700}
+.ci-card .restr{color:#5b2bb0;font-weight:800}
+.ci-card .name{font-family:var(--serif)}
+.res .m,.res .n{font-family:var(--serif)}
+.bigbtn{width:100%;font-family:var(--serif);font-size:22px;font-weight:800;padding:20px;border-radius:14px;border:0;color:#fff;background:var(--ok);margin-top:16px;cursor:pointer;letter-spacing:.5px}
+.bigbtn:disabled{background:#9aa3b2}
+.res{position:fixed;inset:0;z-index:150;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;padding:24px;cursor:pointer}
+.res.ok{background:var(--ok)} .res.bad{background:var(--bad)} .res.warn{background:#b76e00}
+.res .m{font-size:34px;font-weight:900;letter-spacing:.5px}
+.res .n{font-size:26px;font-weight:700;margin-top:14px;text-transform:uppercase}
+.res .d{font-size:18px;margin-top:8px;opacity:.95}
+.res .x{margin-top:30px;font-size:14px;opacity:.8}
+.ci-row{display:flex;justify-content:space-between;align-items:center;padding:12px;border:1px solid var(--line);border-radius:10px;background:#fff;margin-bottom:8px;cursor:pointer}
+.ci-row .n{font-weight:700;font-size:16px}
+#reader{width:100%;max-width:420px;margin:0 auto}
+/* ticket */
+.ticket-wrap{max-width:420px;margin:20px auto;padding:0 16px}
+.ticket-wrap canvas{width:100%;height:auto;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,.15)}
+.chk{width:18px;height:18px}
+.sel-bar{position:sticky;bottom:0;background:#fff;border-top:1px solid var(--line);padding:10px;margin:0 -16px -16px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+@media print{.top,.tabs,.no-print{display:none!important}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+'use strict';
+// =====================================================================
+//  Utilidades
+// =====================================================================
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const money = n => '$' + Number(n || 0).toLocaleString('es-AR');
+const fmtDT = d => d ? new Date(d).toLocaleString('es-AR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }) : '';
+const fmtFecha = d => d ? new Date(d + 'T12:00:00').toLocaleDateString('es-AR', { day: '2-digit', month: '2-digit', year: 'numeric' }) : '';
+const store = {
+  get(k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { } },
+  del(k) { try { localStorage.removeItem(k); } catch (e) { } }
+};
+const RESTRICCIONES = ['Sin restricción', 'Celíaco', 'Vegetariano', 'Hipertenso', 'Otra'];
+const MEDIOS = ['Transferencia', 'Mercado Pago', 'Efectivo', 'Otro'];
+let S = store.get('egreso_sesion');   // {token, rol, nombre, codigo}
+let CFG = null;                        // config del evento (según vista)
+const BRAND = { promo: 'Promo KAOS', lema: 'Una última noche, mil recuerdos', ...(window.APP_CONFIG?.BRAND || {}) };
+
+function catLabel(c, cfg = CFG) {
+  const b = cfg?.edad_max_bebe ?? 2, m = cfg?.edad_max_menor ?? 12;
+  return c === 'bebe' ? `0–${b} años` : c === 'menor' ? `${b + 1}–${m} años` : 'Adulto';
+}
+function restrTxt(i) { return i.restriccion === 'Otra' ? 'Otra: ' + (i.restriccion_detalle || '') : i.restriccion; }
+function estadoBadge(i) {
+  if (i.ingreso_at) return '<span class="b ing">INGRESÓ</span>';
+  if (i.vencido) return '<span class="b vencido">VENCIDO</span>';
+  return `<span class="b ${i.estado}">${i.estado.toUpperCase()}</span>`;
+}
+function toast(msg, err) {
+  const t = document.createElement('div'); t.className = 'toast' + (err ? ' err' : ''); t.textContent = msg;
+  document.body.appendChild(t); setTimeout(() => t.remove(), err ? 5000 : 2600);
+}
+const loaded = {};
+function loadScript(src) {
+  // busca el archivo en lib/ o suelto en la raíz (según cómo se haya subido a GitHub)
+  const tries = [src, src.replace(/^lib\//, '')];
+  if (!loaded[src]) loaded[src] = tries.reduce((pr, u) => pr.catch(() => new Promise((ok, ko) => {
+    const s = document.createElement('script'); s.src = u; s.onload = ok; s.onerror = () => { s.remove(); ko(new Error('No se pudo cargar ' + u.split('/').pop() + '. Verificá que esté subido a GitHub.')); };
+    document.head.appendChild(s);
+  })), Promise.reject());
+  loaded[src].catch(() => delete loaded[src]);
+  return loaded[src];
+}
+window.addEventListener('unhandledrejection', e => { if (e.reason && e.reason.message) toast(e.reason.message, true); });
+function descargarCSV(nombre, rows) {
+  const keys = Object.keys(rows[0] || {});
+  const q = v => '"' + String(v ?? '').replace(/"/g, '""') + '"';
+  const csv = '\ufeff' + [keys.map(q).join(';'), ...rows.map(r => keys.map(k => q(r[k])).join(';'))].join('\r\n');
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
+  a.download = nombre + '.csv'; document.body.appendChild(a); a.click(); a.remove();
+}
+function msgAcceso(x) {
+  const url = location.origin + location.pathname;
+  return `Hola ${x.nombre}! 🎓✨ Este es tu acceso al sistema de invitados de la ${BRAND.promo}:\n${url}\nUsuario: ${x.codigo}\nPIN: ${x.pin}\nAhí cargás a tus invitados. No compartas tu PIN.`;
+}
+async function leerComprobante(file) {
+  if (!file) throw new Error('Adjuntá el comprobante de la transferencia (foto, captura o PDF).');
+  const toB64 = f => new Promise((ok, ko) => { const r = new FileReader(); r.onload = () => ok(String(r.result).split(',')[1]); r.onerror = () => ko(new Error('No se pudo leer el archivo.')); r.readAsDataURL(f); });
+  if (file.type === 'application/pdf') {
+    if (file.size > 2.8e6) throw new Error('El PDF es muy pesado (máx. 2,8 MB). Mandá una captura de pantalla.');
+    return { mime: 'application/pdf', data: await toB64(file) };
+  }
+  if (!/^image\//.test(file.type)) throw new Error('Subí una imagen (foto/captura) o un PDF.');
+  const url = URL.createObjectURL(file);
+  const img = await new Promise((ok, ko) => { const i = new Image(); i.onload = () => ok(i); i.onerror = () => ko(new Error('No se pudo abrir la imagen. Probá con una captura de pantalla.')); i.src = url; });
+  const k = Math.min(1, 1600 / Math.max(img.naturalWidth, img.naturalHeight));
+  const c = document.createElement('canvas'); c.width = Math.round(img.naturalWidth * k); c.height = Math.round(img.naturalHeight * k);
+  const x = c.getContext('2d'); x.fillStyle = '#fff'; x.fillRect(0, 0, c.width, c.height); x.drawImage(img, 0, 0, c.width, c.height);
+  URL.revokeObjectURL(url);
+  return { mime: 'image/jpeg', data: c.toDataURL('image/jpeg', 0.72).split(',')[1] };
+}
+async function verComprobante(id, titulo) {
+  const c = await rpc('ver_comprobante', { p_token: T(), p_id: id });
+  const bin = atob(c.data), u8 = new Uint8Array(bin.length); for (let k = 0; k < bin.length; k++) u8[k] = bin.charCodeAt(k);
+  const url = URL.createObjectURL(new Blob([u8], { type: c.mime })), ext = c.mime === 'application/pdf' ? 'pdf' : 'jpg';
+  await modal(titulo || 'Comprobante', c.mime === 'application/pdf'
+    ? `<p>Es un PDF.</p><a class="btn p" href="${url}" target="_blank" rel="noopener">Abrir PDF</a>`
+    : `<a href="${url}" target="_blank" rel="noopener"><img src="${url}" style="width:100%;border-radius:10px;border:1px solid var(--line)"></a>`,
+    { wide: true, actions: [{ t: 'Descargar', fn: () => { const a = document.createElement('a'); a.href = url; a.download = `comprobante-${id}.${ext}`; a.click(); return false; } }, { t: 'Cerrar', v: null }] });
+}
+async function informarPago(P, preIds, onDone) {
+  const pend = P.invitados.filter(i => i.estado === 'pendiente' && i.precio - i.pagado > 0);
+  if (!pend.length) return toast('No hay invitados pendientes de pago.', true);
+  const pre = new Set(preIds && preIds.length ? preIds : pend.filter(i => !i.informado).map(i => i.id));
+  const r = await modal('Informar pago con comprobante', `
+    ${P.config.datos_pago ? `<div class="notice" style="white-space:pre-wrap"><b>1. Transferí a:</b>\n${esc(P.config.datos_pago)}</div>` : '<div class="notice warn">La organización todavía no cargó los datos de pago. Consultales antes de transferir.</div>'}
+    <p style="margin:6px 0"><b>2. Marcá a quiénes cubre esta transferencia:</b></p>
+    <div class="list" id="ip-list">${pend.map(i => `<label class="it" style="cursor:pointer;align-items:center"><span class="row" style="flex-wrap:nowrap"><input type="checkbox" class="chk" style="width:auto" data-id="${i.id}" data-m="${i.precio - i.pagado}" ${pre.has(i.id) ? 'checked' : ''}>
+      <span><b>${esc(i.apellido)}, ${esc(i.nombre)}</b> <span class="small muted">${esc(i.codigo)} · ${catLabel(i.categoria)}</span>${i.informado ? ' <span class="b informado">ya informado</span>' : ''}</span></span><b>${money(i.precio - i.pagado)}</b></label>`).join('')}</div>
+    <div class="kpi" style="margin:10px 0;text-align:center"><div class="l">Total a transferir</div><div class="v" id="ip-tot">$0</div></div>
+    <div class="fg"><div class="f"><label><b>3. ¿Cómo pagaste?</b></label><select name="medio" id="ip-medio">${['Transferencia', 'Mercado Pago', 'Efectivo'].map(m => opt(m)).join('')}</select></div>
+    <div class="f"><label id="ip-ref-l">N° de operación (opcional)</label><input name="ref" id="ip-ref"></div></div>
+    <div id="ip-file-box" class="f"><label><b>4. Adjuntá el comprobante</b> (foto, captura o PDF)</label><input type="file" id="ip-file" accept="image/*,application/pdf"></div>
+    <p class="small muted" id="ip-nota">La organización verifica el comprobante y, al acreditarlo, se emiten las entradas con QR.</p>`,
+    { wide: true, onOpen: ov => { const upd = () => { $('#ip-tot', ov).textContent = money($$('[data-id]:checked', ov).reduce((a, c) => a + +c.dataset.m, 0)); }; $$('[data-id]', ov).forEach(c => c.onchange = upd); upd();
+        const med = () => { const ef = $('#ip-medio', ov).value === 'Efectivo';
+          $('#ip-file-box', ov).style.display = ef ? 'none' : ''; $('#ip-ref-l', ov).textContent = ef ? '¿A quién le entregaste el efectivo? *' : 'N° de operación (opcional)';
+          $('#ip-nota', ov).textContent = ef ? 'Queda PENDIENTE hasta que la organización confirme que recibió el efectivo. Recién ahí se emiten las entradas.' : 'La organización verifica el comprobante y, al acreditarlo, se emiten las entradas con QR.'; };
+        $('#ip-medio', ov).onchange = med; med(); },
+      actions: [{ t: 'Cancelar', v: null }, { t: 'Informar pago', c: 'p', fn: async ov => {
+        const ids = $$('[data-id]:checked', ov).map(c => +c.dataset.id);
+        if (!ids.length) throw new Error('Marcá al menos un invitado.');
+        const d = formData(ov);
+        const f = d.medio === 'Efectivo' ? { data: '', mime: 'efectivo' } : await leerComprobante($('#ip-file', ov).files[0]);
+        if (d.medio === 'Efectivo' && !d.ref) throw new Error('Indicá a quién le entregaste el efectivo.');
+        return rpc('informar_pago_multi', { p_token: T(), p_ids: ids, p_medio: d.medio, p_referencia: d.ref, p_comprobante: f.data, p_mime: f.mime });
+      } }] });
+  if (r) { toast(`Pago informado · ${money(r.total)} por ${r.invitados} invitado${r.invitados > 1 ? 's' : ''}`); onDone && onDone(); }
+}
+function tablaAccesos(r) {
+  return modal('Accesos de los egresados', `<p>Guardá esta lista: <b>los PIN no se vuelven a mostrar</b> (se pueden regenerar).</p>
+    <div class="scroll" style="max-height:55vh"><table><tr><th>Código</th><th>Egresado</th><th>PIN</th><th></th></tr>${r.map((x, k) => `<tr><td><b>${esc(x.codigo)}</b></td><td>${esc(x.apellido)}, ${esc(x.nombre)}</td><td><b style="letter-spacing:2px">${esc(x.pin)}</b></td>
+    <td>${x.codigo !== 'ERROR' ? `<button class="btn s ok" data-wa="${k}">WhatsApp</button>` : ''}</td></tr>`).join('')}</table></div>`,
+    { wide: true, actions: [
+      { t: 'Descargar lista (Excel/CSV)', fn: () => { descargarCSV('accesos_egresados', r.map(x => ({ Código: x.codigo, Apellido: x.apellido, Nombre: x.nombre, PIN: x.pin, Mensaje: x.codigo === 'ERROR' ? '' : msgAcceso(x) }))); return false; } },
+      { t: 'Copiar todo', fn: async () => { const t = r.filter(x => x.codigo !== 'ERROR').map(x => `${x.codigo} · ${x.apellido}, ${x.nombre} · PIN ${x.pin}`).join('\n'); try { await navigator.clipboard.writeText(t); toast('Lista copiada'); } catch (e) { prompt('Copiá la lista:', t); } return false; } },
+      { t: 'Listo', c: 'p', v: 1 }],
+      onOpen: ov => $$('[data-wa]', ov).forEach(b => b.onclick = () => window.open('https://wa.me/?text=' + encodeURIComponent(msgAcceso(r[+b.dataset.wa])), '_blank')) });
+}
+const LIB = {
+  qr: 'lib/qrcode.js',
+  xlsx: 'lib/xlsx.full.min.js',
+  scan: 'lib/html5-qrcode.min.js'
+};
+
+// =====================================================================
+//  API (Supabase RPC)
+// =====================================================================
+async function rpc(fn, args = {}) {
+  const base = (window.APP_CONFIG?.SUPABASE_URL || '').replace(/\/$/, '');
+  const key = window.APP_CONFIG?.SUPABASE_ANON_KEY || '';
+  const headers = { 'apikey': key, 'Content-Type': 'application/json' };
+  if (key.startsWith('eyJ')) headers.Authorization = 'Bearer ' + key;
+  let res;
+  try {
+    res = await fetch(base + '/rest/v1/rpc/' + fn, { method: 'POST', headers, body: JSON.stringify(args) });
+  } catch (e) {
+    const err = new Error('Sin conexión con el servidor. Revisá internet e intentá de nuevo.'); err.offline = true; throw err;
+  }
+  const txt = await res.text();
+  let data = null; try { data = txt ? JSON.parse(txt) : null; } catch (e) { data = txt; }
+  if (!res.ok) {
+    let msg = (data && (data.message || data.hint || data.error)) || ('Error ' + res.status);
+    if (String(msg).startsWith('SESION:')) { logout(true); msg = msg.slice(7).trim(); }
+    throw new Error(String(msg).replace(/^(AFORO|CUPO|BRINDIS):\s*/, ''));
+  }
+  return data;
+}
+const T = () => S?.token;
+async function run(fn, okMsg) {       // ejecuta acción con manejo de errores
+  try { const r = await fn(); if (okMsg) toast(okMsg); return r; }
+  catch (e) { toast(e.message, true); throw e; }
+}
+
+// =====================================================================
+//  Modal
+// =====================================================================
+function modal(title, body, { wide = false, actions = null, onOpen = null } = {}) {
+  return new Promise(resolve => {
+    const ov = document.createElement('div'); ov.className = 'ov';
+    ov.innerHTML = `<div class="md ${wide ? 'w' : ''}"><h3>${esc(title)}</h3><div class="mb">${body}</div>
+      <div class="acts">${(actions || [{ t: 'Cerrar', v: null }]).map((a, k) => `<button class="btn ${a.c || ''}" data-k="${k}">${esc(a.t)}</button>`).join('')}</div></div>`;
+    const acts = actions || [{ t: 'Cerrar', v: null }];
+    const close = v => { ov.remove(); resolve(v); };
+    ov.addEventListener('click', async e => {
+      if (e.target === ov) return close(null);
+      const b = e.target.closest('[data-k]'); if (!b) return;
+      const a = acts[+b.dataset.k];
+      if (a.fn) {
+        b.disabled = true;
+        try { const r = await a.fn(ov); if (r !== false) close(r === undefined ? true : r); }
+        catch (err) { toast(err.message, true); }
+        finally { b.disabled = false; }
+      } else close(a.v);
+    });
+    document.body.appendChild(ov);
+    const first = ov.querySelector('input,select,textarea'); if (first && !('ontouchstart' in window)) first.focus();
+    if (onOpen) onOpen(ov, close);
+  });
+}
+const confirmar = (title, msg, t = 'Confirmar', c = 'p') => modal(title, `<p>${msg}</p>`, { actions: [{ t: 'Cancelar', v: false }, { t, c, v: true }] });
+function formData(root) {
+  const o = {}; $$('[name]', root).forEach(el => { o[el.name] = el.type === 'checkbox' ? el.checked : el.value.trim(); }); return o;
+}
+const opt = (v, t, sel) => `<option value="${esc(v)}" ${String(v) === String(sel) ? 'selected' : ''}>${esc(t ?? v)}</option>`;
+
+// =====================================================================
+//  Arranque / router
+// =====================================================================
+function shell(sub, tabs, active) {
+  $('#app').innerHTML = `
+  <div class="top"><div><div class="t1">${esc(BRAND.promo)}</div>
+    <div class="t2">${esc(CFG?.evento || '')} · ${esc(sub)}</div></div><div class="sp"></div>
+    <button onclick="logout()">Salir</button></div>
+  ${tabs ? `<nav class="tabs">${tabs.map(t => `<button data-tab="${t.id}" class="${t.id === active ? 'on' : ''}">${esc(t.t)}${t.dot ? `<span class="dot">${t.dot}</span>` : ''}</button>`).join('')}</nav>` : ''}
+  <main id="main"><div class="empty">Cargando…</div></main>`;
+}
+function logout(silent) {
+  if (S?.token && !silent) rpc('logout', { p_token: S.token }).catch(() => { });
+  S = null; ADM.tab = 'resumen'; ADM.filtro = {}; store.del('egreso_sesion'); if (!MODO_PUERTA) location.hash = ''; route();
+}
+const MODO_PUERTA = /puerta/.test(location.hash + location.search);
+function route() {
+  const m = location.hash.match(/e=([0-9a-f]{32})/);
+  if (m) return viewTicketPublic(m[1]);
+  if (MODO_PUERTA && S && S.rol === 'egresado') { S = null; store.del('egreso_sesion'); }
+  if (MODO_PUERTA && S) return viewCheckin();
+  if (!window.APP_CONFIG || APP_CONFIG.SUPABASE_URL.includes('TU-PROYECTO')) return viewSinConfig();
+  if (!S) return viewLogin();
+  if (S.rol === 'admin') return viewAdmin();
+  if (S.rol === 'egresado') return viewEgresado();
+  return viewCheckin();
+}
+window.addEventListener('hashchange', route);
+
+function viewSinConfig() {
+  $('#app').innerHTML = `<div class="login"><div class="card"><h3>Falta configurar</h3>
+  <p>Editá el archivo <b>config.js</b> con la URL y la clave <i>anon</i> de tu proyecto Supabase (ver guía de instalación).</p></div></div>`;
+}
+
+// =====================================================================
+//  Login
+// =====================================================================
+async function viewLogin() {
+  const pn = BRAND.promo.replace(/^promo\s+/i, '');
+  $('#app').innerHTML = `<div class="poster-bg"><i></i><i></i><b></b></div><div class="login"><div class="logo">
+    ${/^promo\s/i.test(BRAND.promo) ? '<div class="promo">PROMO</div>' : ''}<div class="kaos">${esc(pn.toUpperCase())}</div>
+    <div class="lema">${esc(BRAND.lema)}</div><div class="sep">✦</div>
+    <div class="fechaev" id="lg-sub"></div><div class="fechaev" id="lg-ev" style="font-size:12px;opacity:.8;margin-top:4px"></div><div class="sep">✦</div></div>
+    ${MODO_PUERTA ? '<div class="notice" style="text-align:center;font-weight:600">🚪 Control de ingreso · Personal de puerta</div>' : ''}
+    <div class="card ticketbox" id="lg-card"><div class="empty">Conectando…</div></div></div>`;
+  let st;
+  try { st = await rpc('estado_inicial'); }
+  catch (e) { $('#lg-card').innerHTML = `<div class="notice bad">${esc(e.message)}</div><button class="btn" onclick="route()">Reintentar</button>`; return; }
+  $('#lg-ev').textContent = st.evento;
+  const fd = new Date(st.fecha + 'T12:00:00');
+  $('#lg-sub').innerHTML = `${fd.getDate()} ${fd.toLocaleDateString('es-AR', { month: 'long' })} · ${esc(st.hora)} hs<br>${esc(st.lugar)}`;
+  if (!st.hay_admin) {
+    $('#lg-card').innerHTML = `<h3>Crear primer administrador</h3>
+      <p class="small muted">Esto se hace una sola vez. Después vas a poder crear más administradores y acreditadores.</p>
+      <div class="f"><label>Usuario</label><input id="a-u" autocomplete="username" placeholder="ej. gaby"></div>
+      <div class="f"><label>Nombre</label><input id="a-n" placeholder="Nombre y apellido"></div>
+      <div class="f"><label>PIN (mínimo 6 números)</label><input id="a-p" type="password" inputmode="numeric" autocomplete="new-password"></div>
+      <button class="btn p" style="width:100%" id="a-b">Crear administrador</button>`;
+    $('#a-b').onclick = () => run(async () => {
+      await rpc('crear_admin_inicial', { p_usuario: $('#a-u').value, p_nombre: $('#a-n').value, p_pin: $('#a-p').value });
+      toast('Administrador creado. Ya podés ingresar.'); viewLogin();
+    });
+    return;
+  }
+  $('#lg-card').innerHTML = `
+    <div class="f"><label>${MODO_PUERTA ? 'Usuario de puerta' : 'Usuario o código de egresado (ej. E07)'}</label><input id="l-u" autocomplete="username" autocapitalize="none"></div>
+    <div class="f"><label>PIN</label><input id="l-p" type="password" inputmode="numeric" autocomplete="current-password"></div>
+    <button class="btn p" style="width:100%;padding:12px" id="l-b">Ingresar</button>
+    <p class="small muted" style="margin-top:12px">¿Olvidaste tu PIN? Pedile a un organizador que lo regenere.</p>`;
+  const go = () => run(async () => {
+    const r = await rpc('login', { p_usuario: $('#l-u').value, p_pin: $('#l-p').value });
+    if (!r.ok) throw new Error(r.error);
+    S = { token: r.token, rol: r.rol, nombre: r.nombre, codigo: r.codigo }; store.set('egreso_sesion', S); route();
+  });
+  $('#l-b').onclick = go; $('#l-p').onkeydown = e => { if (e.key === 'Enter') go(); };
+}
+
+// =====================================================================
+//  Entrada digital (canvas → PNG para WhatsApp)
+// =====================================================================
+function ticketURL(qr) { return location.origin + location.pathname + '#e=' + qr; }
+async function drawTicket(t) {
+  await loadScript(LIB.qr);
+  try { await Promise.all(['900 100px "Playfair Display"', '600 40px "Playfair Display"', '40px Sacramento'].map(f => document.fonts.load(f))); } catch (e) { }
+  const SERIF = '"Playfair Display",Georgia,serif', SCRIPT = 'Sacramento,cursive';
+  const W = 1080, H = 1700, c = document.createElement('canvas'); c.width = W; c.height = H;
+  const x = c.getContext('2d');
+  const PUR = '#3b1a78', INK = '#2a1552', LILA = '#9b7fd6', CREAM = '#f6efdf';
+  const ls = v => { if ('letterSpacing' in x) x.letterSpacing = v + 'px'; };
+  const rr = (X, Y, w, h, r) => { x.beginPath(); x.moveTo(X + r, Y); x.arcTo(X + w, Y, X + w, Y + h, r); x.arcTo(X + w, Y + h, X, Y + h, r); x.arcTo(X, Y + h, X, Y, r); x.arcTo(X, Y, X + w, Y, r); x.closePath(); };
+  const star = (cx, cy, r) => { x.beginPath(); for (let k = 0; k < 8; k++) { const a = k * Math.PI / 4 - Math.PI / 2, rad = k % 2 ? r * .28 : r; x.lineTo(cx + Math.cos(a) * rad, cy + Math.sin(a) * rad); } x.closePath(); x.fill(); };
+  const fit = (txt, font, max, size, min) => { x.font = font(size); while (x.measureText(txt).width > max && size > min) { size -= 2; x.font = font(size); } };
+  const sep = (y) => { x.strokeStyle = PUR; x.lineWidth = 3; x.beginPath(); x.moveTo(W / 2 - 170, y); x.lineTo(W / 2 - 40, y); x.moveTo(W / 2 + 40, y); x.lineTo(W / 2 + 170, y); x.stroke(); x.fillStyle = PUR; star(W / 2, y, 20); };
+  // fondo tipo afiche
+  x.fillStyle = CREAM; x.fillRect(0, 0, W, H);
+  x.fillStyle = '#4b2594';
+  x.beginPath(); x.ellipse(40, -40, 330, 250, -0.25, 0, Math.PI * 2); x.fill();
+  x.beginPath(); x.ellipse(W - 10, H + 30, 320, 260, -0.3, 0, Math.PI * 2); x.fill();
+  x.strokeStyle = '#b39ae8'; x.lineWidth = 5;
+  x.beginPath(); x.moveTo(0, 330); x.bezierCurveTo(200, 300, 330, 120, 420, 0); x.stroke();
+  x.beginPath(); x.moveTo(W, 1290); x.bezierCurveTo(930, 1400, 900, 1560, 760, H); x.stroke();
+  x.fillStyle = PUR; star(960, 120, 34); star(70, 1560, 34);
+  x.textAlign = 'center';
+  // encabezado
+  const promoTxt = BRAND.promo, m = promoTxt.match(/^promo\s+(.+)$/i);
+  x.fillStyle = PUR;
+  if (m) { x.font = `600 58px ${SERIF}`; ls(8); x.fillText('PROMO', W / 2, 150); ls(0);
+    x.fillRect(W / 2 - 250, 132, 70, 3); x.fillRect(W / 2 + 180, 132, 70, 3); }
+  fit((m ? m[1] : promoTxt).toUpperCase(), z => `900 ${z}px ${SERIF}`, W - 220, 190, 70);
+  ls(4); x.fillText((m ? m[1] : promoTxt).toUpperCase(), W / 2, 310); ls(0);
+  x.fillStyle = LILA; x.font = `72px ${SCRIPT}`; x.fillText(BRAND.lema, W / 2, 395);
+  sep(445);
+  const fd = new Date(t.fecha + 'T12:00:00');
+  x.fillStyle = INK; x.font = `600 42px ${SERIF}`; ls(4);
+  x.fillText(`${fd.getDate()} ${fd.toLocaleDateString('es-AR', { month: 'long' }).toUpperCase()} · ${t.hora} HS`, W / 2, 515);
+  x.fillText(String(t.lugar).toUpperCase(), W / 2, 568); ls(0);
+  // tarjeta
+  rr(90, 620, W - 180, 980, 34); x.fillStyle = '#fffcf5'; x.fill(); x.strokeStyle = LILA; x.lineWidth = 4; x.stroke();
+  rr(108, 638, W - 216, 944, 26); x.strokeStyle = '#d9cbf3'; x.lineWidth = 2; x.stroke();
+  x.fillStyle = '#6f6488'; fit(('ENTRADA DIGITAL · ' + t.evento).toUpperCase(), z => `600 ${z}px ${SERIF}`, W - 300, 28, 18); ls(3);
+  x.fillText(('ENTRADA DIGITAL · ' + t.evento).toUpperCase(), W / 2, 700); ls(0);
+  const nm = (t.nombre + ' ' + t.apellido).toUpperCase();
+  x.fillStyle = INK; fit(nm, z => `800 ${z}px ${SERIF}`, W - 280, 68, 36); x.fillText(nm, W / 2, 780);
+  const q = qrcode(0, 'M'); q.addData(ticketURL(t.qr)); q.make();
+  const n = q.getModuleCount(), cell = Math.floor(500 / (n + 2)), qs = cell * (n + 2), qx = (W - qs) / 2, qy = 815;
+  x.fillStyle = '#fff'; x.fillRect(qx, qy, qs, qs); x.fillStyle = '#1e0f40';
+  for (let r = 0; r < n; r++) for (let k = 0; k < n; k++) if (q.isDark(r, k)) x.fillRect(qx + (k + 1) * cell, qy + (r + 1) * cell, cell, cell);
+  const y0 = qy + qs + 70;
+  const box = (label, val, cx) => {
+    x.fillStyle = '#6f6488'; x.font = `600 28px ${SERIF}`; ls(4); x.fillText(label, cx, y0); ls(0);
+    x.fillStyle = PUR; x.font = `800 66px ${SERIF}`; x.fillText(val, cx, y0 + 72);
+  };
+  box('ENTRADA', t.codigo, W / 2 - 210); box('MESA', t.mesa ? String(t.mesa) : 'A asignar', W / 2 + 210);
+  x.strokeStyle = '#d9cbf3'; x.lineWidth = 2; x.beginPath(); x.moveTo(W / 2, y0 - 30); x.lineTo(W / 2, y0 + 80); x.stroke();
+  x.fillStyle = '#6f6488'; x.font = '500 27px Inter,system-ui,Arial';
+  x.fillText('Válida para UN SOLO ingreso · Personal e intransferible', W / 2, 1515);
+  x.fillText('Presentá este QR en la entrada junto con tu DNI', W / 2, 1555);
+  if (t.usada) { x.save(); x.translate(W / 2, 1060); x.rotate(-0.35); x.fillStyle = 'rgba(192,38,45,.85)'; x.font = `900 120px ${SERIF}`; x.fillText('UTILIZADA', 0, 0); x.restore(); }
+  return c;
+}
+async function mostrarEntrada(t) {
+  const c = await drawTicket(t);
+  const url = ticketURL(t.qr);
+  const msg = `✨ ${BRAND.promo} – ${BRAND.lema} ✨\nTu entrada (${fmtFecha(t.fecha)}, ${t.hora} hs, ${t.lugar}) – ${t.nombre} ${t.apellido} – ${t.codigo}: ${url}`;
+  await modal('Entrada ' + t.codigo, `<div id="tk"></div><p class="small muted" style="margin-top:10px">El QR vale para un solo ingreso. Compartí la imagen o el link.</p>`, {
+    actions: [
+      { t: 'Descargar', fn: () => { const a = document.createElement('a'); a.download = `entrada-${t.codigo}.png`; a.href = c.toDataURL('image/png'); a.click(); return false; } },
+      { t: 'Compartir', c: 'ok', fn: async () => {
+          try {
+            const blob = await new Promise(r => c.toBlob(r, 'image/png'));
+            const file = new File([blob], `entrada-${t.codigo}.png`, { type: 'image/png' });
+            if (navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], text: msg }); return false; }
+          } catch (e) { if (e.name === 'AbortError') return false; }
+          window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank'); return false;
+        } },
+      { t: 'Copiar link', fn: async () => { try { await navigator.clipboard.writeText(url); toast('Link copiado'); } catch (e) { prompt('Copiá el link:', url); } return false; } },
+      { t: 'Cerrar', v: null }],
+    onOpen: ov => { c.style.cssText = 'width:100%;border-radius:12px'; $('#tk', ov).appendChild(c); }
+  });
+}
+async function viewTicketPublic(qr) {
+  $('#app').innerHTML = `<div class="ticket-wrap" id="tw"><div class="empty">Cargando entrada…</div></div>`;
+  try {
+    const t = await rpc('ver_entrada', { p_qr: qr });
+    if (!t) { $('#tw').innerHTML = `<div class="card"><h3>Entrada no válida</h3><p>Esta entrada no existe, fue cancelada o todavía no está confirmada.</p></div>`; return; }
+    const c = await drawTicket(t);
+    $('#tw').innerHTML = ''; $('#tw').appendChild(c);
+    const acts = document.createElement('div'); acts.className = 'row'; acts.style.cssText = 'justify-content:center;margin-top:14px';
+    acts.innerHTML = `<button class="btn p" id="dl">Descargar imagen</button>` +
+      (S && (S.rol === 'admin' || S.rol === 'acreditador') ? `<button class="btn ok" id="gochk">Ir a acreditación</button>` : '');
+    $('#tw').appendChild(acts);
+    $('#dl').onclick = () => { const a = document.createElement('a'); a.download = `entrada-${t.codigo}.png`; a.href = c.toDataURL('image/png'); a.click(); };
+    if ($('#gochk')) $('#gochk').onclick = () => { store.set('egreso_pending_qr', qr); location.hash = ''; };
+  } catch (e) { $('#tw').innerHTML = `<div class="card"><div class="notice bad">${esc(e.message)}</div></div>`; }
+}
+
+// =====================================================================
+//  Formularios compartidos (invitado / brindis / pago)
+// =====================================================================
+function invitadoForm(i = {}, { admin = false, mesas = [], responsables = null, institucional = false } = {}) {
+  const vinc = institucional ? ['Profesor/Directivo', 'Staff', 'Otro'] : ['Familia', 'Amigos'];
+  if (i.es_egresado) vinc.unshift('Egresado');
+  return `<div class="fg">
+    ${responsables ? `<div class="f"><label>Egresado / grupo responsable</label><select name="responsable_id">${responsables.map(r => opt(r.id, `${r.codigo} – ${r.nombre} ${r.apellido}`, i.responsable_id)).join('')}</select></div>` : ''}
+    <div class="f"><label>Nombre *</label><input name="nombre" value="${esc(i.nombre)}"></div>
+    <div class="f"><label>Apellido *</label><input name="apellido" value="${esc(i.apellido)}"></div>
+    <div class="f"><label>DNI *</label><input name="dni" inputmode="numeric" value="${esc(i.dni)}"></div>
+    <div class="f"><label>Edad *</label><input name="edad" type="number" min="0" max="120" inputmode="numeric" value="${esc(i.edad)}"></div>
+    <div class="f"><label>Vínculo</label><select name="vinculo">${vinc.map(v => opt(v, v, i.vinculo)).join('')}</select></div>
+    <div class="f"><label>Restricción alimentaria</label><select name="restriccion">${RESTRICCIONES.map(v => opt(v, v, i.restriccion || 'Sin restricción')).join('')}</select></div>
+    <div class="f"><label>Detalle (si es "Otra")</label><input name="restriccion_detalle" value="${esc(i.restriccion_detalle)}"></div>
+    ${admin ? `<div class="f"><label>Mesa</label><select name="mesa_id"><option value="">Sin asignar</option>${mesas.map(m => opt(m.id, `Mesa ${m.numero}${m.nombre ? ' – ' + m.nombre : ''}`, i.mesa_id)).join('')}</select></div>` : ''}
+  </div>
+  <div class="f"><label>Observaciones</label><textarea name="observaciones" rows="2">${esc(i.observaciones)}</textarea></div>
+  <p class="small muted">El DNI no puede repetirse en todo el evento. La categoría (0–2 / menor / adulto) se calcula sola según la edad.</p>`;
+}
+async function editarInvitado(i, ctx, onDone) {
+  const r = await modal(i.id ? `Editar ${i.codigo}` : 'Agregar invitado', invitadoForm(i, ctx), {
+    actions: [{ t: 'Cancelar', v: null }, { t: 'Guardar', c: 'p', fn: async ov => {
+      const d = formData(ov); if (i.id) d.id = i.id; if (!d.responsable_id && ctx.responsable_id) d.responsable_id = ctx.responsable_id;
+      const mesa = d.mesa_id; delete d.mesa_id;
+      const res = await rpc('guardar_invitado', { p_token: T(), p_data: d });
+      if (ctx.admin && String(mesa || '') !== String(i.mesa_id || '')) await rpc('asignar_mesa', { p_token: T(), p_ids: [res.id], p_mesa_id: mesa ? +mesa : null });
+      return res;
+    } }]
+  });
+  if (r) { toast(i.id ? 'Cambios guardados' : `Invitado ${r.codigo} cargado`); onDone && onDone(r); }
+}
+function brindisForm(b = {}, { admin = false, responsables = null } = {}) {
+  return `<div class="fg">
+    ${responsables ? `<div class="f"><label>Egresado responsable</label><select name="responsable_id">${responsables.map(r => opt(r.id, `${r.codigo} – ${r.nombre} ${r.apellido}`, b.responsable_id)).join('')}</select></div>` : ''}
+    <div class="f"><label>Nombre *</label><input name="nombre" value="${esc(b.nombre)}"></div>
+    <div class="f"><label>Apellido *</label><input name="apellido" value="${esc(b.apellido)}"></div>
+    <div class="f"><label>DNI *</label><input name="dni" inputmode="numeric" value="${esc(b.dni)}"></div>
+    ${admin ? `<div class="f"><label>N° de pulsera (B-…)</label><input name="pulsera" type="number" min="1" value="${esc(b.pulsera)}"></div>` : ''}
+  </div><div class="f"><label>Observaciones</label><input name="observaciones" value="${esc(b.observaciones)}"></div>`;
+}
+async function editarBrindis(b, ctx, onDone) {
+  const r = await modal(b.id ? 'Editar invitado al brindis' : 'Agregar invitado al brindis', brindisForm(b, ctx), {
+    actions: [{ t: 'Cancelar', v: null }, { t: 'Guardar', c: 'p', fn: async ov => {
+      const d = formData(ov); if (b.id) d.id = b.id; if (!d.responsable_id && ctx.responsable_id) d.responsable_id = ctx.responsable_id;
+      return rpc('guardar_brindis', { p_token: T(), p_data: d });
+    } }]
+  });
+  if (r) { toast('Guardado'); onDone && onDone(r); }
+}
+async function registrarPagoAdmin(i, onDone) {
+  const saldo = Math.max(0, i.precio - i.pagado);
+  const r = await modal(`Registrar pago – ${i.codigo}`, `
+    <p><b>${esc(i.nombre)} ${esc(i.apellido)}</b> · ${catLabel(i.categoria)}<br>Precio: <b>${money(i.precio)}</b> · Pagado: ${money(i.pagado)} · Saldo: <b>${money(saldo)}</b></p>
+    <div class="fg"><div class="f"><label>Monto recibido</label><input name="monto" type="number" value="${saldo}"></div>
+    <div class="f"><label>Medio</label><select name="medio">${MEDIOS.map(m => opt(m)).join('')}</select></div></div>
+    <div class="f"><label>Referencia / comprobante / observación</label><input name="ref"></div>
+    <label class="row"><input type="checkbox" name="confirmar" class="chk" checked style="width:auto"> Confirmar y emitir entrada si queda saldado</label>`, {
+    actions: [{ t: 'Cancelar', v: null }, { t: 'Registrar pago', c: 'ok', fn: ov => {
+      const d = formData(ov);
+      return rpc('registrar_pago', { p_token: T(), p_invitado_id: i.id, p_monto: +d.monto, p_medio: d.medio, p_referencia: d.ref, p_confirmar: d.confirmar });
+    } }]
+  });
+  if (r) { toast(`Pago registrado · ${r.codigo}: ${r.estado.toUpperCase()}`); onDone && onDone(r); }
+}
+
+// =====================================================================
+//  PANEL DEL EGRESADO (también lo usa el admin para ver/operar un egresado)
+// =====================================================================
+async function viewEgresado(respId = null, container = null) {
+  const asAdmin = !!respId;
+  if (!asAdmin) shell(`${S.codigo} · ${S.nombre}`, null);
+  const box = container || $('#main');
+  let P, P_comp;
+  try {
+    [P, P_comp] = await Promise.all([rpc('mi_panel', { p_token: T(), p_responsable_id: respId }),
+      rpc('mis_comprobantes', { p_token: T(), p_responsable_id: respId }).catch(() => [])]);
+    P.comprobantes = P_comp;
+  }
+  catch (e) { box.innerHTML = `<div class="notice bad">${esc(e.message)}</div>`; return; }
+  CFG = P.config;
+  const R = P.responsable, inst = R.tipo === 'institucional';
+  const invs = P.invitados.filter(i => i.estado !== 'cancelado');
+  const guests = invs.filter(i => !i.es_egresado);
+  const pagados = guests.filter(i => i.estado === 'pagado' || i.estado === 'confirmado').length;
+  const pendientes = guests.filter(i => i.estado === 'pendiente').length;
+  const libres = R.cupo - P.usados;
+  const esperado = invs.reduce((a, i) => a + i.precio, 0), cobrado = invs.reduce((a, i) => a + i.pagado, 0);
+  const informado = invs.reduce((a, i) => a + (i.informado || 0), 0);
+  const brAct = P.brindis.filter(b => b.estado === 'activo');
+  const brEsperado = brAct.length * P.config.precio_brindis, brCobrado = brAct.filter(b => b.pagado).reduce((a, b) => a + b.monto, 0);
+  const reload = () => viewEgresado(respId, container);
+  const ctx = { admin: asAdmin, responsable_id: R.id, institucional: inst, mesas: asAdmin ? (ADM.dash?.mesas || []) : [] };
+  const precios = P.config.precios.filter(p => p.menu === P.config.menu_activo);
+  const pr = c => money(precios.find(p => p.categoria === c)?.precio);
+
+  box.innerHTML = `
+  ${asAdmin ? `<div class="row sb" style="margin-bottom:10px"><h2 style="margin:0">${esc(R.codigo)} · ${esc(R.nombre)} ${esc(R.apellido)}</h2><button class="btn" id="eg-back">← Volver</button></div>` :
+    `<h2>Hola, ${esc(R.nombre)} 👋</h2>`}
+  <div class="grid" style="margin-bottom:14px">
+    <div class="kpi big"><div class="l">Cupo asignado</div><div class="v">${R.cupo}</div><div class="small muted">${R.cupo_inicial} inicial${R.cupo_extra ? ` + ${R.cupo_extra} extra` : ''}${R.cupo_liberado ? ` − ${R.cupo_liberado} liberados` : ''}</div></div>
+    <div class="kpi big"><div class="l">Invitados cargados</div><div class="v">${P.usados}</div></div>
+    <div class="kpi big ok"><div class="l">Pagados</div><div class="v">${pagados}</div></div>
+    <div class="kpi big warn"><div class="l">Pendientes</div><div class="v">${pendientes}</div></div>
+    <div class="kpi big"><div class="l">Lugares disponibles</div><div class="v">${libres}</div></div>
+  </div>
+  ${asAdmin ? '' : `<div class="card" style="padding:12px 16px"><div class="small"><b>¿Cómo funciona?</b> 1) Cargá a cada invitado con sus datos. 2) Transferí con los datos de pago de abajo (una transferencia puede cubrir a varios). 3) Tocá <b>💳 Informar pago</b>, marcá a quiénes cubre y adjuntá el comprobante. 4) La organización lo verifica y aparece el botón <b>Entrada</b> con el QR para mandarle por WhatsApp. Los bebés (0–${P.config.edad_max_bebe}) no pagan y tienen la entrada al instante.</div></div>`}
+  <div class="grid2">
+    <div class="card"><h3>Dinero</h3>
+      <div class="grid"><div><div class="small muted">Total tarjetas cena</div><b>${money(esperado)}</b></div>
+      <div><div class="small muted">Recaudado (acreditado)</div><b style="color:var(--ok)">${money(cobrado)}</b></div>
+      <div><div class="small muted">Falta cobrar</div><b style="color:var(--warn)">${money(esperado - cobrado)}</b></div>
+      ${informado ? `<div><div class="small muted">Informado sin verificar</div><b>${money(informado)}</b></div>` : ''}
+      ${brAct.length ? `<div><div class="small muted">Brindis (${brAct.length})</div><b>${money(brCobrado)} / ${money(brEsperado)}</b></div>` : ''}</div>
+    </div>
+    <div class="card"><h3>Precios vigentes · menú ${esc(P.config.menu_activo)}</h3>
+      <div class="small">Adulto: <b>${pr('adulto')}</b> · ${catLabel('menor')}: <b>${pr('menor')}</b> · ${catLabel('bebe')}: <b>${pr('bebe')}</b> · Brindis: <b>${money(P.config.precio_brindis)}</b></div>
+      ${P.config.datos_pago ? `<div class="notice" style="margin:10px 0 0;white-space:pre-wrap">${esc(P.config.datos_pago)}</div>` : ''}
+      ${P.config.horas_reserva ? `<p class="small muted" style="margin:8px 0 0">Cada lugar queda reservado ${P.config.horas_reserva} h esperando el pago. Si no se paga/informa, puede liberarse.</p>` : ''}
+    </div>
+  </div>
+  <div class="card">
+    <div class="row sb" style="margin-bottom:6px"><h3 style="margin:0">Invitados a la cena</h3>
+      <div class="row">
+        <button class="btn p" id="eg-add" ${libres <= 0 ? 'disabled' : ''}>+ Agregar invitado</button>
+        <button class="btn" id="eg-lib" ${libres <= 0 ? 'disabled' : ''}>Liberar lugares</button>
+        ${!asAdmin && pendientes ? `<button class="btn ok" id="eg-pagar">💳 Informar pago</button>` : ''}
+        ${!asAdmin ? `<button class="btn" id="eg-sol">Solicitar lugares adicionales</button>` : `<button class="btn" id="eg-aj">Ajustar cupo</button>`}
+      </div></div>
+    ${libres <= 0 ? `<div class="notice warn">No te quedan lugares libres. Podés solicitar lugares adicionales a la organización.</div>` : ''}
+    <div class="list">${P.invitados.length ? P.invitados.map(i => `
+      <div class="it" style="${i.estado === 'cancelado' ? 'opacity:.5' : ''}">
+        <div><div class="n">${esc(i.apellido)}, ${esc(i.nombre)} ${estadoBadge(i)}</div>
+          <div class="small muted">${esc(i.codigo)} · DNI ${esc(i.dni)} · ${catLabel(i.categoria)} · ${esc(i.vinculo)}${i.mesa ? ` · Mesa ${i.mesa}` : ''}
+          ${i.restriccion !== 'Sin restricción' ? ` · <span class="b rest">${esc(restrTxt(i))}</span>` : ''}</div>
+          ${i.estado !== 'cancelado' ? `<div class="small">${money(i.precio)}${i.pagado ? ` · pagado ${money(i.pagado)}` : ''}${i.informado ? ` · <i>informado ${money(i.informado)}, esperando verificación</i>` : ''}
+          ${i.estado === 'pendiente' && i.vence_en ? ` · <span class="${i.vencido ? '' : 'muted'}" style="${i.vencido ? 'color:var(--bad)' : ''}">reserva hasta ${fmtDT(i.vence_en)}</span>` : ''}</div>` : ''}
+        </div>
+        <div class="row" style="justify-content:flex-end">${i.estado === 'cancelado' ? '' : `
+          ${i.estado === 'confirmado' && i.qr ? `<button class="btn s ok" data-ent="${i.id}">Entrada</button>` : ''}
+          ${i.estado === 'pendiente' && !asAdmin ? `<button class="btn s" data-inf="${i.id}">Informar pago</button>` : ''}
+          ${i.estado === 'pendiente' && asAdmin ? `<button class="btn s ok" data-pag="${i.id}">Registrar pago</button>` : ''}
+          <button class="btn s" data-ed="${i.id}">Editar</button>
+          ${!i.es_egresado && (asAdmin || (i.estado === 'pendiente' && !i.pagado)) ? `<button class="btn s bad" data-can="${i.id}">Liberar</button>` : ''}`}
+        </div></div>`).join('') : '<div class="empty">Todavía no cargaste invitados.</div>'}</div>
+    ${invs.some(i => i.estado === 'confirmado') ? `<div class="row" style="margin-top:12px"><button class="btn" id="eg-allent">Descargar todas las entradas confirmadas</button></div>` : ''}
+  </div>
+  ${inst ? '' : `<div class="card">
+    <div class="row sb" style="margin-bottom:6px"><h3 style="margin:0">Invitados al brindis / fiesta</h3><button class="btn" id="eg-badd">+ Agregar al brindis</button></div>
+    <p class="small muted" style="margin-top:0">Ingresan después del brindis con pulsera numerada. La pulsera sola no alcanza: tienen que figurar acá, pagados.</p>
+    <div class="list">${P.brindis.length ? P.brindis.map(b => `<div class="it" style="${b.estado !== 'activo' ? 'opacity:.5' : ''}">
+      <div><div class="n">${esc(b.apellido)}, ${esc(b.nombre)} ${b.estado !== 'activo' ? '<span class="b cancelado">CANCELADO</span>' : b.pagado ? '<span class="b confirmado">PAGADO</span>' : '<span class="b pendiente">PENDIENTE</span>'} ${b.ingreso_at ? '<span class="b ing">INGRESÓ</span>' : ''}</div>
+      <div class="small muted">DNI ${esc(b.dni)} · Pulsera: ${b.codigo ? `<b>${b.codigo}</b>` : 'a asignar'}</div></div>
+      <div class="row">${b.estado === 'activo' ? `${asAdmin ? `<button class="btn s ok" data-bpag="${b.id}">${b.pagado ? 'Pago' : 'Registrar pago'}</button>` : ''}
+        <button class="btn s" data-bed="${b.id}">Editar</button>${asAdmin || !b.pagado ? `<button class="btn s bad" data-bcan="${b.id}">Quitar</button>` : ''}` : ''}</div></div>`).join('') : '<div class="empty">Sin invitados al brindis.</div>'}</div>
+  </div>`}
+  ${P.comprobantes.length ? `<div class="card"><h3>Pagos informados</h3><div class="list">${P.comprobantes.map(c => `<div class="it"><div>
+     <div class="n">${money(c.monto)} <span class="b ${c.estado}">${c.estado === 'informado' ? 'EN REVISIÓN' : c.estado.toUpperCase()}</span></div>
+     <div class="small muted">${fmtDT(c.creado)} · ${esc(c.medio)}${c.referencia ? (c.medio === 'Efectivo' ? ' · entregado a: ' : ' · op. ') + esc(c.referencia) : ''} · ${c.invitados.map(esc).join(', ')}${c.respuesta ? ' · <b>' + esc(c.respuesta) + '</b>' : ''}</div></div>
+     ${c.medio === 'Efectivo' ? '' : `<button class="btn s" data-vcomp="${c.id}">Ver</button>`}</div>`).join('')}</div></div>` : ''}
+  ${P.solicitudes.length ? `<div class="card"><h3>Solicitudes de lugares adicionales</h3><div class="list">${P.solicitudes.map(s => `<div class="it"><div>
+     <div class="n">${s.cantidad} lugares <span class="b ${s.estado}">${s.estado.toUpperCase()}</span></div>
+     <div class="small muted">${fmtDT(s.creado)} · ${esc(s.motivo)}${s.estado === 'aprobada' ? ` · aprobados: <b>${s.cantidad_aprobada}</b>` : ''}${s.respuesta ? ` · Respuesta: ${esc(s.respuesta)}` : ''}</div></div></div>`).join('')}</div></div>` : ''}
+  ${P.pagos.length ? `<div class="card"><h3>Pagos</h3><div class="scroll"><table><tr><th>Fecha</th><th>Entrada</th><th>Invitado</th><th class="num">Monto</th><th>Medio</th><th>Ref.</th><th>Estado</th></tr>
+     ${P.pagos.map(p => `<tr><td>${fmtDT(p.creado)}</td><td>${esc(p.codigo)}</td><td>${esc(p.nombre)}</td><td class="num">${money(p.monto)}</td><td>${esc(p.medio)}</td><td>${esc(p.referencia)}</td><td><span class="b ${p.estado}">${p.estado.toUpperCase()}</span></td></tr>`).join('')}</table></div></div>` : ''}
+  `;
+  const byId = id => P.invitados.find(i => i.id === +id), bById = id => P.brindis.find(b => b.id === +id);
+  if ($('#eg-back', box)) $('#eg-back', box).onclick = () => admTab('egresados');
+  $('#eg-add', box).onclick = () => editarInvitado({ vinculo: inst ? 'Profesor/Directivo' : 'Familia' }, ctx, reload);
+  $('#eg-lib', box).onclick = async () => {
+    const r = await modal('Liberar lugares', `<p>Tenés <b>${libres}</b> lugares sin usar. Los que liberes vuelven al cupo general y otro egresado puede pedirlos. <b>No se pueden recuperar automáticamente</b>: tendrías que volver a solicitarlos.</p>
+      <div class="f"><label>Cantidad a liberar</label><input name="n" type="number" min="1" max="${libres}" value="1"></div>`,
+      { actions: [{ t: 'Cancelar', v: null }, { t: 'Liberar', c: 'bad', fn: ov => rpc('liberar_lugares', { p_token: T(), p_cantidad: +formData(ov).n, p_responsable_id: asAdmin ? R.id : null }) }] });
+    if (r) { toast('Lugares liberados'); reload(); }
+  };
+  if ($('#eg-sol', box)) $('#eg-sol', box).onclick = async () => {
+    const r = await modal('Solicitar lugares adicionales', `<div class="f"><label>¿Cuántos lugares más necesitás?</label><input name="n" type="number" min="1" value="1"></div>
+      <div class="f"><label>Motivo / comentario</label><textarea name="m" rows="2" placeholder="ej. abuelos y tíos"></textarea></div><p class="small muted">Un administrador la revisa y asigna según disponibilidad.</p>`,
+      { actions: [{ t: 'Cancelar', v: null }, { t: 'Enviar solicitud', c: 'p', fn: ov => { const d = formData(ov); return rpc('solicitar_lugares', { p_token: T(), p_cantidad: +d.n, p_motivo: d.m }); } }] });
+    if (r) { toast('Solicitud enviada'); reload(); }
+  };
+  if ($('#eg-aj', box)) $('#eg-aj', box).onclick = () => ajustarCupo(R, reload);
+  $$('[data-ed]', box).forEach(b => b.onclick = () => editarInvitado(byId(b.dataset.ed), ctx, reload));
+  $$('[data-can]', box).forEach(b => b.onclick = async () => {
+    const i = byId(b.dataset.can);
+    if (await confirmar('Liberar lugar', `¿Cancelar a <b>${esc(i.nombre)} ${esc(i.apellido)}</b> (${i.codigo})? El lugar vuelve a tu cupo.${i.pagado ? '<br><b>Tiene pagos registrados: la devolución se gestiona por fuera del sistema.</b>' : ''}`, 'Sí, liberar', 'bad'))
+      run(() => rpc('cancelar_invitado', { p_token: T(), p_id: i.id, p_motivo: '' }), 'Lugar liberado').then(reload);
+  });
+  $$('[data-inf]', box).forEach(b => b.onclick = () => informarPago(P, [+b.dataset.inf], reload));
+  if ($('#eg-pagar', box)) $('#eg-pagar', box).onclick = () => informarPago(P, null, reload);
+  $$('[data-vcomp]', box).forEach(b => b.onclick = () => verComprobante(+b.dataset.vcomp));
+  $$('[data-pag]', box).forEach(b => b.onclick = () => registrarPagoAdmin(byId(b.dataset.pag), reload));
+  $$('[data-ent]', box).forEach(b => b.onclick = () => { const i = byId(b.dataset.ent); mostrarEntrada({ ...i, ...P.config }); });
+  if ($('#eg-allent', box)) $('#eg-allent', box).onclick = async () => {
+    for (const i of invs.filter(i => i.estado === 'confirmado' && i.qr)) {
+      const c = await drawTicket({ ...i, ...P.config }); const a = document.createElement('a'); a.download = `entrada-${i.codigo}.png`; a.href = c.toDataURL('image/png'); a.click();
+      await new Promise(r => setTimeout(r, 350));
+    }
+  };
+  if (!inst) {
+    $('#eg-badd', box).onclick = () => editarBrindis({}, { admin: asAdmin, responsable_id: R.id }, reload);
+    $$('[data-bed]', box).forEach(b => b.onclick = () => editarBrindis(bById(b.dataset.bed), { admin: asAdmin, responsable_id: R.id }, reload));
+    $$('[data-bcan]', box).forEach(b => b.onclick = async () => {
+      if (await confirmar('Quitar del brindis', '¿Quitar a esta persona de la lista del brindis?', 'Quitar', 'bad'))
+        run(() => rpc('cancelar_brindis', { p_token: T(), p_id: +b.dataset.bcan }), 'Quitado').then(reload);
+    });
+    $$('[data-bpag]', box).forEach(b => b.onclick = () => pagoBrindis(bById(b.dataset.bpag), reload));
+  }
+}
+
+// =====================================================================
+//  PANEL ADMINISTRADOR
+// =====================================================================
+const ADM = { tab: 'resumen', dash: null, invs: null, filtro: {}, sel: new Set() };
+const ADM_TABS = [
+  { id: 'resumen', t: 'Resumen' }, { id: 'egresados', t: 'Egresados' }, { id: 'invitados', t: 'Invitados' },
+  { id: 'pagos', t: 'Pagos' }, { id: 'solicitudes', t: 'Solicitudes' }, { id: 'mesas', t: 'Mesas' },
+  { id: 'brindis', t: 'Brindis' }, { id: 'acreditacion', t: 'Acreditación' }, { id: 'exportar', t: 'Exportar' },
+  { id: 'config', t: 'Configuración' }];
+async function viewAdmin() { admTab(ADM.tab); }
+async function admTab(tab) {
+  ADM.tab = tab;
+  try { ADM.dash = await rpc('dashboard', { p_token: T() }); CFG = ADM.dash.config; }
+  catch (e) { if (!S) return; shell('Administración', null); $('#main').innerHTML = `<div class="notice bad">${esc(e.message)}</div><button class="btn" onclick="admTab('${tab}')">Reintentar</button>`; return; }
+  const tabs = ADM_TABS.map(t => ({ ...t, dot: t.id === 'solicitudes' ? ADM.dash.aforo.solicitudes_pendientes || '' : t.id === 'pagos' ? ADM.dash.pagos.informados_cant || '' : '' }));
+  shell(`Administración · ${S.nombre}`, tabs, tab);
+  $$('.tabs button').forEach(b => b.onclick = () => admTab(b.dataset.tab));
+  const fn = { resumen: admResumen, egresados: admEgresados, invitados: admInvitados, pagos: admPagos, solicitudes: admSolicitudes,
+    mesas: admMesas, brindis: admBrindis, acreditacion: () => viewCheckin(true), exportar: admExportar, config: admConfig }[tab];
+  try { await fn(); } catch (e) { $('#main').innerHTML = `<div class="notice bad">${esc(e.message)}</div>`; }
+}
+
+function admResumen() {
+  const D = ADM.dash, A = D.aforo, P = D.pagos, C = D.config, B = D.brindis;
+  const reservados = A.egresados + A.institucional + A.reserva_otros + A.brindis_reservado;
+  const libresAsig = A.asignado_egresados - (A.cargados - A.cargados_institucional);
+  const seg = [
+    ['Egresados', A.egresados, '#2a1552'], ['Profesores/Directivos', A.institucional, '#8a5cd6'], ['Otras reservas', A.reserva_otros, '#a79fb8'],
+    ['Brindis', A.brindis_reservado, '#d9a441'], ['Invitados cargados', A.cargados - A.cargados_institucional, '#4d2a94'],
+    ['Asignado sin usar', libresAsig, '#c9b6f0'], ['Disponible', A.disponible, '#ebe3d1']];
+  const al = D.alimentacion, cat = D.categorias;
+  $('#main').innerHTML = `
+  ${!C.datos_pago ? `<div class="notice bad row sb"><span><b>Falta cargar los datos para pagar</b> (alias, CBU o link de Mercado Pago). Sin eso los egresados no saben dónde transferir.</span><button class="btn s" onclick="admTab('config')">Cargar ahora</button></div>` : ''}
+  ${A.vencidos ? `<div class="notice bad row sb"><span><b>${A.vencidos}</b> reservas vencidas sin pago.</span><button class="btn s bad" id="r-venc">Liberar vencidas</button></div>` : ''}
+  ${P.informados_cant ? `<div class="notice warn row sb"><span><b>${P.informados_cant}</b> pagos informados esperan verificación (${money(P.informado)}).</span><button class="btn s" onclick="admTab('pagos')">Ver pagos</button></div>` : ''}
+  ${A.solicitudes_pendientes ? `<div class="notice warn row sb"><span><b>${A.solicitudes_pendientes}</b> solicitudes de lugares adicionales (${A.solicitudes_lugares} lugares).</span><button class="btn s" onclick="admTab('solicitudes')">Ver solicitudes</button></div>` : ''}
+  ${A.pagados ? `<div class="notice row sb"><span><b>${A.pagados}</b> invitados pagados sin confirmar.</span><button class="btn s ok" id="r-conf">Confirmar y emitir entradas</button></div>` : ''}
+  <div class="card"><h3>Aforo · capacidad ${A.capacidad}</h3>
+    <div class="grid">
+      <div class="kpi big"><div class="l">Capacidad total</div><div class="v">${A.capacidad}</div></div>
+      <div class="kpi"><div class="l">Lugares reservados</div><div class="v">${reservados}</div><div class="small muted">${A.egresados} egres. · ${A.institucional} prof/dir · ${A.reserva_otros} otros${A.brindis_reservado ? ` · ${A.brindis_reservado} brindis` : ''}</div></div>
+      <div class="kpi"><div class="l">Asignados a egresados</div><div class="v">${A.asignado_egresados}</div></div>
+      <div class="kpi"><div class="l">Invitados cargados</div><div class="v">${A.cargados}</div></div>
+      <div class="kpi ok"><div class="l">Confirmados</div><div class="v">${A.confirmados}</div><div class="small muted">incluye egresados y 0–${C.edad_max_bebe}</div></div>
+      <div class="kpi ${A.disponible <= 0 ? 'bad' : 'ok'}"><div class="l">Disponibles (bolsa)</div><div class="v">${A.disponible}</div></div>
+      <div class="kpi ${A.solicitudes_pendientes ? 'warn' : ''}"><div class="l">Solicitudes pendientes</div><div class="v">${A.solicitudes_pendientes}</div><div class="small muted">${A.solicitudes_lugares} lugares</div></div>
+      <div class="kpi"><div class="l">Ingresados</div><div class="v">${A.ingresados}</div></div>
+    </div>
+    <div class="bar">${seg.filter(s => s[1] > 0).map(s => `<span title="${s[0]}: ${s[1]}" style="width:${s[1] / A.capacidad * 100}%;background:${s[2]}"></span>`).join('')}</div>
+    <div class="legend">${seg.map(s => `<span><i style="background:${s[2]}"></i>${s[0]}: <b>${s[1]}</b></span>`).join('')}</div>
+  </div>
+  <div class="grid2">
+    <div class="card"><h3>Pagos</h3><div class="grid">
+      <div class="kpi"><div class="l">Total esperado</div><div class="v" style="font-size:20px">${money(P.esperado)}</div></div>
+      <div class="kpi ok"><div class="l">Total cobrado</div><div class="v" style="font-size:20px">${money(P.cobrado)}</div></div>
+      <div class="kpi warn"><div class="l">Pendiente</div><div class="v" style="font-size:20px">${money(Math.max(0, P.esperado - P.cobrado))}</div></div>
+      <div class="kpi"><div class="l">Tarjetas pagadas</div><div class="v">${P.tarjetas_pagadas}</div><div class="small muted">${P.tarjetas_sin_cargo} sin cargo</div></div>
+    </div><p class="small muted" style="margin-bottom:0">Menú activo: <b>${esc(C.menu_activo)}</b>. Los pagados conservan el precio con el que se pagaron.</p></div>
+    <div class="card"><h3>Alimentación</h3><div class="grid">
+      ${['Celíaco', 'Vegetariano', 'Hipertenso', 'Otra'].map(r => `<div class="kpi"><div class="l">${r === 'Otra' ? 'Otros' : r + 's'}</div><div class="v">${al[r] || 0}</div></div>`).join('')}
+    </div><p class="small muted" style="margin-bottom:0">Por edad: ${catLabel('bebe')}: <b>${cat.bebe || 0}</b> · ${catLabel('menor')}: <b>${cat.menor || 0}</b> · Adultos: <b>${cat.adulto || 0}</b></p></div>
+    <div class="card"><h3>Brindis / fiesta</h3><div class="grid">
+      <div class="kpi"><div class="l">Pulseras (cupo)</div><div class="v">${B.cupo}</div></div>
+      <div class="kpi"><div class="l">Disponibles</div><div class="v">${B.cupo - B.registrados}</div></div>
+      <div class="kpi"><div class="l">Registrados</div><div class="v">${B.registrados}</div><div class="small muted">${B.asignadas} con pulsera</div></div>
+      <div class="kpi ok"><div class="l">Pagadas</div><div class="v">${B.pagadas}</div><div class="small muted">${money(B.cobrado)}</div></div>
+      <div class="kpi"><div class="l">Ingresadas</div><div class="v">${B.ingresadas}</div></div>
+    </div></div>
+  </div>`;
+  if ($('#r-venc')) $('#r-venc').onclick = async () => { if (await confirmar('Liberar reservas vencidas', `Se cancelarán ${A.vencidos} invitados pendientes con la reserva vencida y sin pago informado. Los lugares vuelven al cupo de cada egresado.`, 'Liberar', 'bad')) run(() => rpc('liberar_vencidos', { p_token: T() })).then(r => { toast(`${r.liberados} reservas liberadas`); admTab('resumen'); }); };
+  if ($('#r-conf')) $('#r-conf').onclick = async () => {
+    const invs = await rpc('listar_invitados', { p_token: T() });
+    const ids = invs.filter(i => i.estado === 'pagado').map(i => i.id);
+    run(() => rpc('confirmar_invitados', { p_token: T(), p_ids: ids })).then(r => { toast(`${r.confirmados} entradas emitidas`); admTab('resumen'); });
+  };
+}
+
+async function ajustarCupo(R, onDone) {
+  const r = await modal(`Ajustar cupo – ${R.codigo}`, `<p>Cupo actual: <b>${R.cupo}</b>. Bolsa general disponible: <b>${ADM.dash.aforo.disponible}</b>.</p>
+    <div class="f"><label>Cantidad (positivo = asignar extra desde la bolsa · negativo = quitar lugares no usados)</label><input name="d" type="number" value="1"></div>
+    <div class="f"><label>Motivo</label><input name="m"></div>`,
+    { actions: [{ t: 'Cancelar', v: null }, { t: 'Aplicar', c: 'p', fn: ov => { const d = formData(ov); return rpc('ajustar_cupo', { p_token: T(), p_responsable_id: R.id, p_delta: +d.d, p_motivo: d.m }); } }] });
+  if (r) { toast('Cupo actualizado'); onDone ? onDone() : admTab(ADM.tab); }
+}
+function mostrarPIN(codigo, nombre, pin) {
+  const url = location.origin + location.pathname;
+  const msg = msgAcceso({ nombre, codigo, pin }); void url;
+  return modal('Acceso del egresado', `<p>Anotá o enviá estos datos. <b>El PIN no se vuelve a mostrar</b> (se puede regenerar).</p>
+    <div class="kpi" style="text-align:center"><div class="l">Usuario</div><div class="v">${esc(codigo)}</div><div class="l" style="margin-top:8px">PIN</div><div class="v" style="letter-spacing:6px">${esc(pin)}</div></div>`,
+    { actions: [{ t: 'Enviar por WhatsApp', c: 'ok', fn: () => { window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank'); return false; } },
+      { t: 'Copiar', fn: async () => { try { await navigator.clipboard.writeText(msg); toast('Copiado'); } catch (e) { } return false; } }, { t: 'Listo', c: 'p', v: true }] });
+}
+function parseLote(t) {
+  return t.split('\n').map(l => l.trim()).filter(Boolean).map(l => {
+    let parts = l.split(/[;\t]/); if (parts.length === 1) parts = l.split(',');
+    parts = parts.map(x => x.trim()).filter(Boolean);
+    let dni = '', cupo = ''; const txt = [];
+    for (const p of parts) { const d = p.replace(/[.\s-]/g, ''); if (!dni && /^\d{6,9}$/.test(d)) dni = d; else if (dni && /^\d{1,3}$/.test(d)) cupo = d; else txt.push(p); }
+    let ape = '', nom = '';
+    if (txt.length >= 2) { ape = txt[0]; nom = txt.slice(1).join(' '); }
+    else if (txt.length === 1) { const w = txt[0].split(/\s+/); if (w.length > 1) { ape = w.pop(); nom = w.join(' '); } else nom = w[0]; }
+    return { ape, nom, dni, cupo };
+  });
+}
+function admEgresados() {
+  const Rs = ADM.dash.responsables.filter(r => r.activo);
+  const tot = k => Rs.filter(r => r.tipo === 'egresado').reduce((a, r) => a + (r[k] || 0), 0);
+  $('#main').innerHTML = `
+  <div class="row sb"><h2>Egresados y grupos</h2><div class="row">
+    <button class="btn p" id="e-add">+ Egresado</button><button class="btn" id="e-lote">Carga en lote</button><button class="btn" id="e-grp">+ Grupo institucional</button><button class="btn ok" id="e-pins">Accesos / PIN de todos</button></div></div>
+  <p class="small muted">Bolsa general disponible: <b>${ADM.dash.aforo.disponible}</b> lugares. Cada egresado ocupa 1 lugar propio además de su cupo de invitados.</p>
+  <div class="scroll"><table><thead><tr><th>Cód.</th><th>Nombre</th><th class="num">Cupo inicial</th><th class="num">Extras solic.</th><th class="num">Extras asig.</th><th class="num">Liberado</th><th class="num">Cupo</th><th class="num">Utilizado</th><th class="num">Libres</th><th class="num">Pagados</th><th class="num">Pend.</th><th class="num">$ Esperado</th><th class="num">$ Cobrado</th><th class="num">$ Pendiente</th><th class="num">Brindis</th><th></th></tr></thead><tbody>
+  ${Rs.map(r => `<tr><td><b>${esc(r.codigo)}</b></td><td>${esc(r.nombre)} ${esc(r.apellido)}${r.tipo === 'institucional' ? ' <span class="b rest">grupo</span>' : ''}</td>
+    <td class="num">${r.cupo_inicial}</td><td class="num">${r.extras_solicitados || ''}</td><td class="num">${r.cupo_extra || ''}</td><td class="num">${r.cupo_liberado || ''}</td>
+    <td class="num"><b>${r.cupo}</b></td><td class="num">${r.usados}</td><td class="num">${r.cupo - r.usados}</td><td class="num">${r.pagados}</td><td class="num">${r.pendientes || ''}</td>
+    <td class="num">${money(r.esperado)}</td><td class="num">${money(r.cobrado)}</td><td class="num">${money(r.esperado - r.cobrado)}</td><td class="num">${r.brindis || ''}</td>
+    <td><div class="row" style="flex-wrap:nowrap"><button class="btn s p" data-ver="${r.id}">Abrir</button><button class="btn s" data-cup="${r.id}">± Cupo</button>
+    <button class="btn s" data-edr="${r.id}">Editar</button>${r.tipo === 'egresado' ? `<button class="btn s" data-pin="${r.id}">PIN</button>` : ''}<button class="btn s bad" data-baja="${r.id}">Baja</button></div></td></tr>`).join('')}
+  <tr style="background:#f7f8fa;font-weight:700"><td></td><td>Total egresados (${Rs.filter(r => r.tipo === 'egresado').length})</td><td class="num">${tot('cupo_inicial')}</td><td class="num">${tot('extras_solicitados')}</td><td class="num">${tot('cupo_extra')}</td><td class="num">${tot('cupo_liberado')}</td><td class="num">${tot('cupo')}</td><td class="num">${tot('usados')}</td><td class="num">${tot('cupo') - tot('usados')}</td><td class="num">${tot('pagados')}</td><td class="num">${tot('pendientes')}</td><td class="num">${money(tot('esperado'))}</td><td class="num">${money(tot('cobrado'))}</td><td class="num">${money(tot('esperado') - tot('cobrado'))}</td><td class="num">${tot('brindis')}</td><td></td></tr>
+  </tbody></table></div><div id="eg-detail"></div>`;
+  const byId = id => Rs.find(r => r.id === +id);
+  const formR = (r = {}, grupo) => `<div class="fg">
+    ${!r.id && grupo ? `<div class="f"><label>Código (ej. STAFF)</label><input name="codigo"></div>` : ''}
+    <div class="f"><label>Nombre</label><input name="nombre" value="${esc(r.nombre)}"></div>
+    <div class="f"><label>Apellido</label><input name="apellido" value="${esc(r.apellido)}"></div>
+    ${!r.id && !grupo ? `<div class="f"><label>DNI del egresado</label><input name="dni" inputmode="numeric"></div><div class="f"><label>Edad</label><input name="edad" type="number" value="18"></div>` : ''}
+    <div class="f"><label>Cupo inicial de invitados</label><input name="cupo_inicial" type="number" min="0" value="${r.id ? r.cupo_inicial : grupo ? 0 : ADM.dash.config.cupo_inicial_default}"></div></div>
+    ${!r.id && !grupo ? '<p class="small muted">El código (E01, E02…) y el PIN se generan solos. Se crea también la entrada propia del egresado (E..-000).</p>' : ''}`;
+  $('#e-add').onclick = async () => {
+    const r = await modal('Nuevo egresado', formR(), { actions: [{ t: 'Cancelar', v: null }, { t: 'Crear', c: 'p', fn: ov => rpc('guardar_responsable', { p_token: T(), p_data: { ...formData(ov), tipo: 'egresado' } }) }] });
+    if (r) { await mostrarPIN(r.codigo, '', r.pin); admTab('egresados'); }
+  };
+  $('#e-grp').onclick = async () => {
+    const r = await modal('Nuevo grupo institucional', formR({}, true) + '<p class="small muted">Para profesores, directivos, staff, etc. Sus lugares se descuentan de la bolsa y se cargan desde "Abrir".</p>', { actions: [{ t: 'Cancelar', v: null }, { t: 'Crear', c: 'p', fn: ov => rpc('guardar_responsable', { p_token: T(), p_data: { ...formData(ov), tipo: 'institucional' } }) }] });
+    if (r) admTab('egresados');
+  };
+  $('#e-lote').onclick = async () => {
+    const txt = await modal('Carga de egresados en lote', `<p class="small">Pegá una línea por egresado. Sirve cualquiera de estos formatos (el cupo es opcional; por defecto ${ADM.dash.config.cupo_inicial_default}):</p>
+      <p class="small muted" style="margin-top:-6px">Nombre Apellido, DNI<br>Apellido; Nombre; DNI; Cupo<br>Columnas copiadas de Excel</p>
+      <textarea name="t" rows="10" placeholder="Uma Díaz, 50.111.222"></textarea><p class="small muted">En el paso siguiente revisás cómo quedaron nombre y apellido antes de crear.</p>`,
+      { wide: true, actions: [{ t: 'Cancelar', v: null }, { t: 'Revisar →', c: 'p', fn: ov => formData(ov).t || false }] });
+    if (!txt) return;
+    const filas = parseLote(txt);
+    const r = await modal('Revisar egresados (' + filas.length + ')', `<p class="small">Corregí si hace falta cuál parte es <b>apellido</b> y cuál <b>nombre</b> (se puede editar después también).</p>
+      <div class="scroll"><table id="lote-t"><tr><th>Apellido</th><th>Nombre</th><th>DNI</th><th>Cupo</th></tr>
+      ${filas.map((f, k) => `<tr data-row="${k}"><td><input data-f="ape" value="${esc(f.ape)}" style="min-width:130px"></td><td><input data-f="nom" value="${esc(f.nom)}" style="min-width:150px"></td>
+        <td><input data-f="dni" value="${esc(f.dni)}" style="min-width:110px;${f.dni ? '' : 'border-color:var(--bad)'}"></td><td><input data-f="cupo" type="number" value="${esc(f.cupo)}" placeholder="${ADM.dash.config.cupo_inicial_default}" style="width:80px"></td></tr>`).join('')}</table></div>`,
+      { wide: true, actions: [{ t: 'Cancelar', v: null }, { t: 'Crear todos', c: 'p', fn: async ov => {
+        const out = [];
+        for (const tr of $$('#lote-t [data-row]', ov)) {
+          const g = k => $(`[data-f=${k}]`, tr).value.trim(); const ap = g('ape'), no = g('nom');
+          try { const x = await rpc('guardar_responsable', { p_token: T(), p_data: { tipo: 'egresado', apellido: ap, nombre: no, dni: g('dni'), cupo_inicial: g('cupo') } }); out.push({ codigo: x.codigo, nombre: no, apellido: ap, pin: x.pin }); }
+          catch (e) { out.push({ codigo: 'ERROR', nombre: no, apellido: ap, pin: e.message }); }
+        }
+        return out;
+      } }] });
+    if (r) {
+      await tablaAccesos(r);
+      admTab('egresados');
+    }
+  };
+  $('#e-pins').onclick = async () => {
+    const eg = Rs.filter(r => r.tipo === 'egresado');
+    if (!await confirmar('Generar accesos de todos', `Se generará un <b>PIN nuevo</b> para los ${eg.length} egresados (los anteriores dejan de funcionar) y vas a poder descargarlos y mandarlos por WhatsApp. Usalo para el primer envío o si se perdieron.`, 'Generar PINs')) return;
+    const out = [];
+    for (const R of eg) { try { const x = await rpc('reset_pin', { p_token: T(), p_responsable_id: R.id }); out.push({ codigo: x.codigo, nombre: R.nombre, apellido: R.apellido, pin: x.pin }); } catch (e) { out.push({ codigo: 'ERROR', nombre: R.nombre, apellido: R.apellido, pin: e.message }); } }
+    await tablaAccesos(out);
+  };
+  $$('[data-ver]').forEach(b => b.onclick = () => { $('#main').innerHTML = '<div class="empty">Cargando…</div>'; viewEgresado(+b.dataset.ver, $('#main')); window.scrollTo(0, 0); });
+  $$('[data-cup]').forEach(b => b.onclick = () => ajustarCupo(byId(b.dataset.cup)));
+  $$('[data-edr]').forEach(b => b.onclick = async () => {
+    const R = byId(b.dataset.edr);
+    const r = await modal(`Editar ${R.codigo}`, formR(R, R.tipo === 'institucional'), { actions: [{ t: 'Cancelar', v: null }, { t: 'Guardar', c: 'p', fn: ov => rpc('guardar_responsable', { p_token: T(), p_data: { ...formData(ov), id: R.id } }) }] });
+    if (r) { toast('Guardado'); admTab('egresados'); }
+  });
+  $$('[data-pin]').forEach(b => b.onclick = async () => {
+    const R = byId(b.dataset.pin);
+    if (!await confirmar('Regenerar PIN', `Se generará un PIN nuevo para <b>${R.codigo} – ${esc(R.nombre)}</b>. El anterior deja de funcionar.`)) return;
+    const r = await run(() => rpc('reset_pin', { p_token: T(), p_responsable_id: R.id }));
+    mostrarPIN(r.codigo, R.nombre, r.pin);
+  });
+  $$('[data-baja]').forEach(b => b.onclick = async () => {
+    const R = byId(b.dataset.baja);
+    if (await confirmar('Dar de baja', `¿Dar de baja a <b>${R.codigo} – ${esc(R.nombre)}</b>? Se cancelan sus invitados pendientes y todo su cupo vuelve a la bolsa.`, 'Dar de baja', 'bad'))
+      run(() => rpc('baja_responsable', { p_token: T(), p_responsable_id: R.id }), 'Baja registrada').then(() => admTab('egresados'));
+  });
+}
+
+async function admInvitados() {
+  $('#main').innerHTML = '<div class="empty">Cargando invitados…</div>';
+  ADM.invs = await rpc('listar_invitados', { p_token: T(), p_incluir_cancelados: !!ADM.filtro.canc });
+  ADM.sel.clear();
+  const Rs = ADM.dash.responsables.filter(r => r.activo), M = ADM.dash.mesas, f = ADM.filtro;
+  $('#main').innerHTML = `
+  <div class="row sb"><h2>Invitados a la cena</h2><button class="btn p" id="i-add">+ Agregar invitado</button></div>
+  <div class="card" style="padding:12px"><div class="fg">
+    <div class="f"><label>Buscar</label><input id="f-q" placeholder="Nombre, DNI, entrada…" value="${esc(f.q)}"></div>
+    <div class="f"><label>Egresado</label><select id="f-r"><option value="">Todos</option>${Rs.map(r => opt(r.id, `${r.codigo} – ${r.nombre}`, f.r)).join('')}</select></div>
+    <div class="f"><label>Estado</label><select id="f-e"><option value="">Todos</option>${['pendiente', 'vencido', 'pagado', 'confirmado', 'ingresó', 'cancelado'].map(e => opt(e, e, f.e)).join('')}</select></div>
+    <div class="f"><label>Mesa</label><select id="f-m"><option value="">Todas</option><option value="0" ${f.m === '0' ? 'selected' : ''}>Sin mesa</option>${M.map(m => opt(m.id, 'Mesa ' + m.numero, f.m)).join('')}</select></div>
+    <div class="f"><label>Restricción</label><select id="f-x"><option value="">Todas</option>${RESTRICCIONES.map(x => opt(x, x, f.x)).join('')}</select></div>
+  </div><label class="row small"><input type="checkbox" id="f-c" ${f.canc ? 'checked' : ''} style="width:auto"> Mostrar cancelados</label></div>
+  <div id="i-tbl"></div>
+  <div class="sel-bar no-print" id="i-bar" style="display:none"><b id="i-n"></b>
+    <select id="i-mesa" style="width:auto"><option value="">Asignar mesa…</option><option value="null">Quitar mesa</option>${M.map(m => opt(m.id, `Mesa ${m.numero} (${m.ocupados}${m.capacidad ? '/' + m.capacidad : ''})`)).join('')}</select>
+    <button class="btn s p" id="i-asig">Asignar</button><button class="btn s ok" id="i-conf">Confirmar pagados</button><button class="btn s" id="i-clr">Limpiar selección</button></div>`;
+  const draw = () => {
+    const q = (f.q || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    const L = ADM.invs.filter(i => {
+      if (f.r && i.responsable_id !== +f.r) return false;
+      if (f.e) { const e = i.ingreso_at ? 'ingresó' : i.vencido ? 'vencido' : i.estado; if (e !== f.e && !(f.e === 'pendiente' && i.estado === 'pendiente')) return false; }
+      if (f.m === '0' && i.mesa_id) return false; if (f.m && f.m !== '0' && i.mesa_id !== +f.m) return false;
+      if (f.x && i.restriccion !== f.x) return false;
+      if (q && !`${i.nombre} ${i.apellido} ${i.apellido} ${i.dni} ${i.codigo}`.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').includes(q)) return false;
+      return true;
+    });
+    $('#i-tbl').innerHTML = `<p class="small muted">${L.length} personas</p><div class="scroll" style="max-height:70vh"><table><thead><tr><th><input type="checkbox" class="chk" id="i-all" ${L.length && L.every(i => ADM.sel.has(i.id)) ? 'checked' : ''}></th><th>Entrada</th><th>Apellido y nombre</th><th>DNI</th><th>Edad</th><th>Categoría</th><th>Vínculo</th><th>Restricción</th><th>Mesa</th><th>Estado</th><th class="num">Precio</th><th class="num">Pagado</th><th>Obs.</th><th></th></tr></thead><tbody>
+    ${L.map(i => `<tr><td><input type="checkbox" class="chk" data-s="${i.id}" ${ADM.sel.has(i.id) ? 'checked' : ''}></td><td><b>${esc(i.codigo)}</b></td><td>${esc(i.apellido)}, ${esc(i.nombre)}</td><td>${esc(i.dni)}</td><td>${i.edad}</td><td>${catLabel(i.categoria)}</td><td>${esc(i.vinculo)}</td>
+      <td>${i.restriccion !== 'Sin restricción' ? `<span class="b rest">${esc(restrTxt(i))}</span>` : ''}</td><td>${i.mesa ?? ''}</td><td>${estadoBadge(i)}</td>
+      <td class="num">${money(i.precio)}</td><td class="num">${i.pagado ? money(i.pagado) : ''}${i.informado ? ` <span class="b informado">+${money(i.informado)}</span>` : ''}</td><td class="wrap small">${esc(i.observaciones)}</td>
+      <td><div class="row" style="flex-wrap:nowrap">${i.estado === 'cancelado' ? '' : `${i.estado === 'pendiente' ? `<button class="btn s ok" data-pag="${i.id}">Pago</button>` : ''}${i.estado === 'confirmado' ? `<button class="btn s" data-ent="${i.id}">Entrada</button>` : ''}<button class="btn s" data-ed="${i.id}">Editar</button>${!i.es_egresado && !i.ingreso_at ? `<button class="btn s bad" data-can="${i.id}">Cancelar</button>` : ''}${i.ingreso_at ? `<button class="btn s" data-undo="${i.id}">Deshacer ingreso</button>` : ''}`}</div></td></tr>`).join('')}
+    </tbody></table></div>`;
+    const bar = () => { $('#i-bar').style.display = ADM.sel.size ? 'flex' : 'none'; $('#i-n').textContent = ADM.sel.size + ' seleccionados'; };
+    $$('[data-s]').forEach(c => c.onchange = () => { c.checked ? ADM.sel.add(+c.dataset.s) : ADM.sel.delete(+c.dataset.s); bar(); });
+    $('#i-all').onchange = e => { L.forEach(i => e.target.checked ? ADM.sel.add(i.id) : ADM.sel.delete(i.id)); draw(); bar(); };
+    const byId = id => ADM.invs.find(i => i.id === +id), ctx = { admin: true, mesas: M };
+    $$('[data-ed]').forEach(b => b.onclick = () => editarInvitado(byId(b.dataset.ed), ctx, () => admTab('invitados')));
+    $$('[data-pag]').forEach(b => b.onclick = () => registrarPagoAdmin(byId(b.dataset.pag), () => admTab('invitados')));
+    $$('[data-ent]').forEach(b => b.onclick = () => { const i = byId(b.dataset.ent); mostrarEntrada({ ...i, ...ADM.dash.config }); });
+    $$('[data-can]').forEach(b => b.onclick = async () => {
+      const i = byId(b.dataset.can);
+      const r = await modal('Cancelar invitado', `<p>¿Cancelar a <b>${esc(i.nombre)} ${esc(i.apellido)}</b> (${i.codigo}, ${i.estado})? Se invalida su QR y el lugar vuelve al cupo de ${esc(i.responsable)}.${i.pagado ? `<br><b>Tiene ${money(i.pagado)} pagados: la devolución se gestiona por fuera.</b>` : ''}</p><div class="f"><label>Motivo</label><input name="m"></div>`,
+        { actions: [{ t: 'Volver', v: null }, { t: 'Cancelar invitado', c: 'bad', fn: ov => rpc('cancelar_invitado', { p_token: T(), p_id: i.id, p_motivo: formData(ov).m }) }] });
+      if (r) { toast('Invitado cancelado'); admTab('invitados'); }
+    });
+    $$('[data-undo]').forEach(b => b.onclick = async () => { if (await confirmar('Deshacer ingreso', 'Solo usar si el ingreso se registró por error. El QR vuelve a quedar válido.')) run(() => rpc('checkin_deshacer', { p_token: T(), p_id: +b.dataset.undo }), 'Ingreso deshecho').then(() => admTab('invitados')); });
+    bar();
+  };
+  const bind = (id, k, ev = 'change') => $(id).addEventListener(ev, e => { f[k] = e.target.value; draw(); });
+  bind('#f-q', 'q', 'input'); bind('#f-r', 'r'); bind('#f-e', 'e'); bind('#f-m', 'm'); bind('#f-x', 'x');
+  $('#f-c').onchange = e => { f.canc = e.target.checked; admInvitados(); };
+  $('#i-add').onclick = () => editarInvitado({ responsable_id: f.r ? +f.r : undefined }, { admin: true, mesas: M, responsables: Rs }, () => admTab('invitados'));
+  $('#i-asig').onclick = () => { const v = $('#i-mesa').value; if (!v) return toast('Elegí una mesa', true);
+    run(() => rpc('asignar_mesa', { p_token: T(), p_ids: [...ADM.sel], p_mesa_id: v === 'null' ? null : +v }), 'Mesa asignada').then(() => admTab('invitados')); };
+  $('#i-conf').onclick = () => run(() => rpc('confirmar_invitados', { p_token: T(), p_ids: [...ADM.sel] })).then(r => { toast(`${r.confirmados} confirmados`); admTab('invitados'); });
+  $('#i-clr').onclick = () => { ADM.sel.clear(); draw(); };
+  draw();
+}
+
+async function admPagos() {
+  const [L, CP] = await Promise.all([rpc('listar_pagos', { p_token: T() }), rpc('listar_comprobantes', { p_token: T() }).catch(() => null)]);
+  const inf = L.filter(p => p.estado === 'informado' && !(CP && CP.some(c => c.estado === 'informado' && c.invitados.some(x => x.codigo === p.codigo))));
+  const cpPend = (CP || []).filter(c => c.estado === 'informado'), cpHist = (CP || []).filter(c => c.estado !== 'informado');
+  $('#main').innerHTML = `<h2>Pagos</h2>
+  ${CP === null ? '<div class="notice bad">Falta correr la actualización de la base "migracion_02_comprobantes.sql" en Supabase para ver los comprobantes.</div>' : ''}
+  <div class="card"><h3>Pagos a verificar (${cpPend.length})</h3>
+    ${cpPend.length ? `<div class="list">${cpPend.map(c => `<div class="it"><div>
+      <div class="n">${esc(c.responsable)} · ${esc(c.responsable_nombre)} — <span style="font-size:18px">${money(c.monto)}</span></div>
+      <div class="small muted">${fmtDT(c.creado)} · ${esc(c.medio)}${c.referencia ? (c.mime === 'efectivo' ? ' · entregado a: ' : ' · op. ') + esc(c.referencia) : ''}</div>
+      <div class="small" style="margin-top:4px">${c.invitados.map(x => `${esc(x.codigo)} ${esc(x.nombre)} (${money(x.monto)})`).join(' · ')}</div></div>
+      <div class="row" style="justify-content:flex-end">${c.mime === 'efectivo' ? '<span class="b pendiente">EFECTIVO</span>' : `<button class="btn s p" data-vc="${c.id}">Ver comprobante</button>`}<button class="btn s ok" data-okc="${c.id}">${c.mime === 'efectivo' ? 'Recibí el efectivo · emitir entradas' : 'Acreditar y emitir entradas'}</button><button class="btn s bad" data-noc="${c.id}">Rechazar</button></div></div>`).join('')}</div>`
+      : '<div class="empty">No hay comprobantes pendientes.</div>'}
+  </div>
+  ${inf.length ? `<div class="card"><h3>Otros pagos informados sin comprobante (${inf.length})</h3><div class="scroll"><table><tr><th>Fecha</th><th>Entrada</th><th>Invitado</th><th>Egresado</th><th class="num">Monto</th><th>Medio</th><th>Referencia</th><th></th></tr>
+    ${inf.map(p => `<tr><td>${fmtDT(p.creado)}</td><td><b>${esc(p.codigo)}</b></td><td>${esc(p.nombre)}</td><td>${esc(p.responsable)}</td><td class="num">${money(p.monto)}</td><td>${esc(p.medio)}</td><td class="wrap">${esc(p.referencia)}</td>
+      <td><div class="row" style="flex-wrap:nowrap"><button class="btn s ok" data-ok="${p.id}">Acreditar</button><button class="btn s bad" data-no="${p.id}">Rechazar</button></div></td></tr>`).join('')}</table></div></div>` : ''}
+  ${cpHist.length ? `<div class="card"><h3>Comprobantes procesados</h3><div class="scroll" style="max-height:40vh"><table><tr><th>Fecha</th><th>Egresado</th><th class="num">Monto</th><th>Invitados</th><th>Estado</th><th>Resolvió</th><th></th></tr>
+    ${cpHist.map(c => `<tr><td>${fmtDT(c.creado)}</td><td>${esc(c.responsable)}</td><td class="num">${money(c.monto)}</td><td class="wrap small">${c.invitados.map(x => esc(x.codigo)).join(', ')}</td><td><span class="b ${c.estado}">${c.estado.toUpperCase()}</span></td><td class="small">${esc(c.resuelto_por || '')}</td><td>${c.mime === 'efectivo' ? 'Efectivo' : `<button class="btn s" data-vc="${c.id}">Ver</button>`}</td></tr>`).join('')}</table></div></div>` : ''}
+  <div class="card"><h3>Historial de pagos por invitado</h3><div class="scroll" style="max-height:50vh"><table><tr><th>Fecha</th><th>Entrada</th><th>Invitado</th><th>Egresado</th><th class="num">Monto</th><th>Medio</th><th>Referencia</th><th>Estado</th><th>Registró</th><th></th></tr>
+    ${L.filter(p => p.estado !== 'informado').map(p => `<tr><td>${fmtDT(p.creado)}</td><td>${esc(p.codigo)}</td><td>${esc(p.nombre)}</td><td>${esc(p.responsable)}</td><td class="num">${money(p.monto)}</td><td>${esc(p.medio)}</td><td class="wrap">${esc(p.referencia)}</td><td><span class="b ${p.estado}">${p.estado.toUpperCase()}</span></td><td class="small">${esc(p.registrado_por || '')}</td>
+      <td>${p.estado === 'acreditado' ? `<button class="btn s bad" data-anu="${p.id}">Anular</button>` : ''}</td></tr>`).join('')}</table></div></div>`;
+  $$('[data-vc]').forEach(b => b.onclick = () => verComprobante(+b.dataset.vc, 'Comprobante #' + b.dataset.vc));
+  $$('[data-okc]').forEach(b => b.onclick = async () => { const c = cpPend.find(x => x.id === +b.dataset.okc);
+    if (await confirmar('Acreditar comprobante', `¿Confirmás que recibiste <b>${money(c.monto)}</b> de ${esc(c.responsable)}? Se emiten las entradas de: ${c.invitados.map(x => esc(x.nombre)).join(', ')}.`, 'Acreditar', 'ok'))
+      run(() => rpc('verificar_comprobante', { p_token: T(), p_id: c.id, p_aceptar: true, p_respuesta: '' })).then(r => { toast(`${r.confirmados} entradas emitidas`); admTab('pagos'); }); });
+  $$('[data-noc]').forEach(b => b.onclick = async () => {
+    const r = await modal('Rechazar comprobante', `<div class="f"><label>Motivo (lo ve el egresado)</label><input name="m" value="No se encontró la transferencia"></div>`,
+      { actions: [{ t: 'Cancelar', v: null }, { t: 'Rechazar', c: 'bad', fn: ov => rpc('verificar_comprobante', { p_token: T(), p_id: +b.dataset.noc, p_aceptar: false, p_respuesta: formData(ov).m }) }] });
+    if (r) { toast('Comprobante rechazado'); admTab('pagos'); } });
+  $$('[data-ok]').forEach(b => b.onclick = () => run(() => rpc('verificar_pago', { p_token: T(), p_pago_id: +b.dataset.ok, p_aceptar: true, p_confirmar: true }), 'Pago acreditado').then(() => admTab('pagos')));
+  $$('[data-no]').forEach(b => b.onclick = async () => { if (await confirmar('Rechazar pago', '¿Rechazar este pago informado?', 'Rechazar', 'bad')) run(() => rpc('verificar_pago', { p_token: T(), p_pago_id: +b.dataset.no, p_aceptar: false }), 'Pago rechazado').then(() => admTab('pagos')); });
+  $$('[data-anu]').forEach(b => b.onclick = async () => { if (await confirmar('Anular pago', 'Si el invitado queda con saldo, vuelve a PENDIENTE y su QR se invalida.', 'Anular', 'bad')) run(() => rpc('anular_pago', { p_token: T(), p_pago_id: +b.dataset.anu }), 'Pago anulado').then(() => admTab('pagos')); });
+}
+
+async function admSolicitudes() {
+  const L = await rpc('listar_solicitudes', { p_token: T() });
+  $('#main').innerHTML = `<h2>Solicitudes de lugares adicionales</h2>
+  <p>Bolsa general disponible: <b style="font-size:20px">${ADM.dash.aforo.disponible}</b> lugares.</p>
+  <div class="card"><div class="list">${L.length ? L.map(s => `<div class="it"><div>
+    <div class="n">${esc(s.codigo)} · ${esc(s.responsable_nombre)} pide <b>${s.cantidad}</b> <span class="b ${s.estado}">${s.estado.toUpperCase()}</span></div>
+    <div class="small muted">${fmtDT(s.creado)} · ${esc(s.motivo)}${s.estado !== 'pendiente' ? ` · ${s.estado === 'aprobada' ? 'aprobados ' + s.cantidad_aprobada : ''} ${esc(s.respuesta)} (${esc(s.resuelto_por)})` : ''}</div></div>
+    ${s.estado === 'pendiente' ? `<div class="row"><button class="btn s ok" data-ap="${s.id}">Aprobar</button><button class="btn s bad" data-re="${s.id}">Rechazar</button></div>` : ''}</div>`).join('') : '<div class="empty">No hay solicitudes.</div>'}</div></div>`;
+  const byId = id => L.find(s => s.id === +id);
+  $$('[data-ap]').forEach(b => b.onclick = async () => {
+    const s = byId(b.dataset.ap);
+    const r = await modal(`Aprobar solicitud de ${s.codigo}`, `<p>Pidió ${s.cantidad}. Bolsa disponible: <b>${ADM.dash.aforo.disponible}</b>.</p>
+      <div class="f"><label>Cantidad a asignar</label><input name="n" type="number" min="1" value="${Math.min(s.cantidad, ADM.dash.aforo.disponible)}"></div><div class="f"><label>Mensaje (opcional)</label><input name="m"></div>`,
+      { actions: [{ t: 'Cancelar', v: null }, { t: 'Aprobar', c: 'ok', fn: ov => { const d = formData(ov); return rpc('resolver_solicitud', { p_token: T(), p_id: s.id, p_aprobar: true, p_cantidad: +d.n, p_respuesta: d.m }); } }] });
+    if (r) { toast('Lugares asignados'); admTab('solicitudes'); }
+  });
+  $$('[data-re]').forEach(b => b.onclick = async () => {
+    const r = await modal('Rechazar solicitud', `<div class="f"><label>Motivo (lo ve el egresado)</label><input name="m" value="Sin lugares disponibles por el momento"></div>`,
+      { actions: [{ t: 'Cancelar', v: null }, { t: 'Rechazar', c: 'bad', fn: ov => rpc('resolver_solicitud', { p_token: T(), p_id: +b.dataset.re, p_aprobar: false, p_cantidad: 0, p_respuesta: formData(ov).m }) }] });
+    if (r) admTab('solicitudes');
+  });
+}
+
+// ---- Mesas y reporte por mesa
+function reporteMesas(invs, mesas) {
+  const act = invs.filter(i => i.estado !== 'cancelado');
+  const rows = mesas.map(m => ({ m, L: act.filter(i => i.mesa_id === m.id) }));
+  const sin = act.filter(i => !i.mesa_id);
+  return { rows, sin };
+}
+function resumenRestr(L) {
+  const c = {}; L.forEach(i => { if (i.restriccion !== 'Sin restricción') { const k = restrTxt(i); c[k] = (c[k] || 0) + 1; } });
+  return c;
+}
+async function admMesas() {
+  const invs = await rpc('listar_invitados', { p_token: T() });
+  const M = ADM.dash.mesas, Rs = ADM.dash.responsables.filter(r => r.activo);
+  const { rows, sin } = reporteMesas(invs, M);
+  $('#main').innerHTML = `<div class="row sb"><h2>Mesas</h2><div class="row"><button class="btn p" id="m-add">+ Mesa</button><button class="btn" id="m-lote">Crear varias</button><button class="btn" id="m-print">Imprimir reporte por mesa</button></div></div>
+  <p class="small muted">Para asignar personas: pestaña <a href="#" onclick="admTab('invitados');return false">Invitados</a>, seleccionarlas y elegir mesa (o editar cada invitado). Sin mesa: <b>${sin.length}</b>.</p>
+  <div class="grid2">${rows.map(({ m, L }) => { const rc = resumenRestr(L); const cats = { adulto: 0, menor: 0, bebe: 0 }; L.forEach(i => cats[i.categoria]++); return `
+    <div class="card"><div class="row sb"><h3 style="margin:0">Mesa ${m.numero}${m.nombre ? ' · ' + esc(m.nombre) : ''}</h3><div class="row"><button class="btn s" data-me="${m.id}">Editar</button><button class="btn s bad" data-md="${m.id}">Eliminar</button></div></div>
+      <div class="small muted">${esc(m.tipo)}${m.capacidad ? ` · capacidad ${m.capacidad}` : ''}</div>
+      <p style="margin:8px 0"><b style="font-size:20px">${L.length} personas</b> · ${cats.adulto} adultos · ${cats.menor} menores · ${cats.bebe} bebés</p>
+      ${Object.keys(rc).length ? `<div class="row">${Object.entries(rc).map(([k, v]) => `<span class="b rest">${v} ${esc(k)}</span>`).join('')}</div>` : '<div class="small muted">Sin restricciones</div>'}
+      <details style="margin-top:8px"><summary class="small">Ver lista</summary><div class="small">${L.map(i => `${esc(i.apellido)}, ${esc(i.nombre)} (${esc(i.codigo)})${i.restriccion !== 'Sin restricción' ? ' – <b>' + esc(restrTxt(i)) + '</b>' : ''}`).join('<br>') || '—'}</div></details>
+    </div>`; }).join('') || '<div class="empty">Todavía no hay mesas.</div>'}</div>`;
+  const formM = (m = {}) => `<div class="fg"><div class="f"><label>Número</label><input name="numero" type="number" value="${esc(m.numero)}"></div>
+    <div class="f"><label>Nombre / referencia</label><input name="nombre" value="${esc(m.nombre)}" placeholder="ej. Familia Díaz"></div>
+    <div class="f"><label>Tipo</label><select name="tipo">${['Familia', 'Amigos', 'Profesores/Directivos', 'Egresados', 'Otra'].map(t => opt(t, t, m.tipo)).join('')}</select></div>
+    <div class="f"><label>Capacidad (vacío = sin tope)</label><input name="capacidad" type="number" value="${esc(m.capacidad)}"></div>
+    <div class="f"><label>Egresado (opcional)</label><select name="responsable_id"><option value="">—</option>${Rs.map(r => opt(r.id, r.codigo + ' – ' + r.nombre, m.responsable_id)).join('')}</select></div></div>
+    <div class="f"><label>Notas</label><input name="notas" value="${esc(m.notas)}"></div>`;
+  $('#m-add').onclick = async () => { const r = await modal('Nueva mesa', formM({ numero: (Math.max(0, ...M.map(m => m.numero)) + 1) }), { actions: [{ t: 'Cancelar', v: null }, { t: 'Guardar', c: 'p', fn: ov => rpc('guardar_mesa', { p_token: T(), p_data: formData(ov) }) }] }); if (r) admTab('mesas'); };
+  $('#m-lote').onclick = async () => {
+    const r = await modal('Crear varias mesas', `<div class="fg"><div class="f"><label>Desde N°</label><input name="a" type="number" value="${Math.max(0, ...M.map(m => m.numero)) + 1}"></div><div class="f"><label>Hasta N°</label><input name="b" type="number"></div><div class="f"><label>Capacidad c/u</label><input name="c" type="number"></div></div>`,
+      { actions: [{ t: 'Cancelar', v: null }, { t: 'Crear', c: 'p', fn: async ov => { const d = formData(ov); for (let n = +d.a; n <= +d.b; n++) await rpc('guardar_mesa', { p_token: T(), p_data: { numero: n, capacidad: d.c } }); } }] });
+    if (r) admTab('mesas');
+  };
+  $$('[data-me]').forEach(b => b.onclick = async () => { const m = M.find(x => x.id === +b.dataset.me); const r = await modal('Editar mesa ' + m.numero, formM(m), { actions: [{ t: 'Cancelar', v: null }, { t: 'Guardar', c: 'p', fn: ov => rpc('guardar_mesa', { p_token: T(), p_data: { ...formData(ov), id: m.id } }) }] }); if (r) admTab('mesas'); });
+  $$('[data-md]').forEach(b => b.onclick = async () => { if (await confirmar('Eliminar mesa', '¿Eliminar esta mesa? Debe estar vacía.', 'Eliminar', 'bad')) run(() => rpc('eliminar_mesa', { p_token: T(), p_id: +b.dataset.md }), 'Mesa eliminada').then(() => admTab('mesas')); });
+  $('#m-print').onclick = () => imprimirMesas(invs, M);
+}
+function imprimir(title, html) {
+  const w = window.open('', '_blank'); if (!w) return toast('Permití las ventanas emergentes para imprimir', true);
+  w.document.write(`<!doctype html><html><head><meta charset="utf-8"><title>${esc(title)}</title><style>
+    body{font:12px Arial,sans-serif;margin:18px;color:#000} h1{font-size:18px;margin:0 0 4px} h2{font-size:15px;margin:18px 0 6px;page-break-after:avoid}
+    table{border-collapse:collapse;width:100%} th,td{border:1px solid #999;padding:4px 6px;text-align:left} th{background:#eee}
+    .pb{page-break-before:always} .box{display:inline-block;width:14px;height:14px;border:1px solid #000} .muted{color:#555}
+    @media print{button{display:none}}</style></head><body><button onclick="print()">Imprimir</button>${html}</body></html>`);
+  w.document.close();
+}
+function imprimirMesas(invs, M) {
+  const { rows, sin } = reporteMesas(invs, M), C = ADM.dash.config;
+  const tabla = L => `<table><tr><th>Apellido y nombre</th><th>DNI</th><th>Categoría</th><th>Restricción</th><th>Entrada</th></tr>${L.sort((a, b) => a.apellido.localeCompare(b.apellido)).map(i => `<tr><td>${esc(i.apellido)}, ${esc(i.nombre)}</td><td>${esc(i.dni)}</td><td>${catLabel(i.categoria, C)}</td><td>${i.restriccion !== 'Sin restricción' ? '<b>' + esc(restrTxt(i)) + '</b>' : ''}</td><td>${esc(i.codigo)}</td></tr>`).join('')}</table>`;
+  imprimir('Reporte por mesa', `<h1>${esc(C.evento)} – Reporte por mesa</h1><div class="muted">${fmtFecha(C.fecha)} · ${esc(C.lugar)} · generado ${new Date().toLocaleString('es-AR')}</div>
+    <h2>Resumen</h2><table><tr><th>Mesa</th><th>Personas</th><th>Adultos</th><th>Menores</th><th>Bebés</th><th>Celíacos</th><th>Vegetarianos</th><th>Hipertensos</th><th>Otras</th></tr>
+    ${rows.map(({ m, L }) => `<tr><td>${m.numero} ${esc(m.nombre)}</td><td>${L.length}</td><td>${L.filter(i => i.categoria === 'adulto').length}</td><td>${L.filter(i => i.categoria === 'menor').length}</td><td>${L.filter(i => i.categoria === 'bebe').length}</td>${['Celíaco', 'Vegetariano', 'Hipertenso', 'Otra'].map(r => `<td>${L.filter(i => i.restriccion === r).length || ''}</td>`).join('')}</tr>`).join('')}</table>
+    ${rows.map(({ m, L }) => `<h2 class="pb">Mesa ${m.numero} ${esc(m.nombre)} – ${L.length} personas</h2><div>${Object.entries(resumenRestr(L)).map(([k, v]) => `${v} ${esc(k)}`).join(' · ') || 'Sin restricciones'}</div>${tabla(L)}`).join('')}
+    ${sin.length ? `<h2 class="pb">Sin mesa asignada – ${sin.length}</h2>${tabla(sin)}` : ''}`);
+}
+
+// ---- Brindis (admin)
+async function pagoBrindis(b, onDone) {
+  const C = ADM.dash?.config || CFG;
+  const r = await modal(`Pago brindis – ${b.nombre} ${b.apellido}`, `<label class="row"><input type="checkbox" name="p" class="chk" style="width:auto" checked> Pagado</label>
+    <div class="fg" style="margin-top:10px"><div class="f"><label>Monto</label><input name="m" type="number" value="${b.pagado ? b.monto : C.precio_brindis}"></div><div class="f"><label>Medio</label><select name="me">${MEDIOS.map(m => opt(m, m, b.medio)).join('')}</select></div></div>`,
+    { actions: [{ t: 'Cancelar', v: null }, { t: 'Guardar', c: 'ok', fn: ov => { const d = formData(ov); return rpc('registrar_pago_brindis', { p_token: T(), p_id: b.id, p_pagado: d.p, p_monto: +d.m, p_medio: d.me }); } }] });
+  if (r) { toast('Guardado'); onDone && onDone(); }
+}
+async function admBrindis() {
+  const L = await rpc('listar_brindis', { p_token: T() }), B = ADM.dash.brindis, Rs = ADM.dash.responsables.filter(r => r.activo && r.tipo === 'egresado');
+  $('#main').innerHTML = `<div class="row sb"><h2>Brindis / fiesta · pulseras</h2><div class="row"><button class="btn p" id="b-add">+ Agregar</button><button class="btn" id="b-auto">Asignar pulseras automáticamente</button></div></div>
+  <div class="grid" style="margin-bottom:12px"><div class="kpi"><div class="l">Cupo pulseras</div><div class="v">${B.cupo}</div></div><div class="kpi"><div class="l">Disponibles</div><div class="v">${B.cupo - B.registrados}</div></div><div class="kpi"><div class="l">Asignadas</div><div class="v">${B.asignadas}</div></div><div class="kpi ok"><div class="l">Pagadas</div><div class="v">${B.pagadas}</div></div><div class="kpi"><div class="l">Ingresadas</div><div class="v">${B.ingresadas}</div></div></div>
+  ${B.cupo === 0 ? '<div class="notice warn">El cupo de brindis es 0. Definilo en Configuración para habilitar la carga.</div>' : ''}
+  <div class="f"><input id="b-q" placeholder="Buscar…"></div><div id="b-t"></div>`;
+  const draw = () => {
+    const q = $('#b-q').value.toLowerCase();
+    const F = L.filter(b => !q || `${b.nombre} ${b.apellido} ${b.dni} ${b.codigo} ${b.responsable}`.toLowerCase().includes(q));
+    $('#b-t').innerHTML = `<div class="scroll"><table><tr><th>Pulsera</th><th>Apellido y nombre</th><th>DNI</th><th>Egresado</th><th>Pagado</th><th class="num">Monto</th><th>Ingresó</th><th></th></tr>
+    ${F.map(b => `<tr><td><b>${b.codigo || '—'}</b></td><td>${esc(b.apellido)}, ${esc(b.nombre)}</td><td>${esc(b.dni)}</td><td>${esc(b.responsable)} ${esc(b.responsable_nombre)}</td><td>${b.pagado ? '<span class="b confirmado">SÍ</span>' : '<span class="b pendiente">NO</span>'}</td><td class="num">${b.pagado ? money(b.monto) : ''}</td><td>${b.ingreso_at ? fmtDT(b.ingreso_at) : ''}</td>
+      <td><div class="row" style="flex-wrap:nowrap"><button class="btn s ok" data-p="${b.id}">Pago</button><button class="btn s" data-e="${b.id}">Editar</button><button class="btn s bad" data-c="${b.id}">Quitar</button></div></td></tr>`).join('')}</table></div>`;
+    const byId = id => L.find(b => b.id === +id);
+    $$('[data-p]').forEach(x => x.onclick = () => pagoBrindis(byId(x.dataset.p), () => admTab('brindis')));
+    $$('[data-e]').forEach(x => x.onclick = () => editarBrindis(byId(x.dataset.e), { admin: true }, () => admTab('brindis')));
+    $$('[data-c]').forEach(x => x.onclick = async () => { if (await confirmar('Quitar', '¿Quitar a esta persona del brindis? Su pulsera queda libre.', 'Quitar', 'bad')) run(() => rpc('cancelar_brindis', { p_token: T(), p_id: +x.dataset.c }), 'Quitado').then(() => admTab('brindis')); });
+  };
+  $('#b-q').oninput = draw; draw();
+  $('#b-add').onclick = () => editarBrindis({}, { admin: true, responsables: Rs }, () => admTab('brindis'));
+  $('#b-auto').onclick = () => run(() => rpc('asignar_pulseras_auto', { p_token: T() })).then(r => { toast(`${r.asignadas} pulseras asignadas`); admTab('brindis'); });
+}
+
+// ---- Configuración
+async function admConfig() {
+  const C = ADM.dash.config;
+  const menus = [...new Set(C.precios.map(p => p.menu))];
+  const [U, AU] = await Promise.all([rpc('listar_usuarios', { p_token: T() }), rpc('ver_auditoria', { p_token: T(), p_limite: 200 })]);
+  const pv = (m, c) => C.precios.find(p => p.menu === m && p.categoria === c)?.precio ?? '';
+  $('#main').innerHTML = `<h2>Configuración</h2>
+  <div class="card" id="cfg"><h3>Evento y aforo</h3><div class="fg">
+    <div class="f"><label>Evento</label><input name="evento" value="${esc(C.evento)}"></div>
+    <div class="f"><label>Fecha</label><input name="fecha" type="date" value="${esc(C.fecha)}"></div>
+    <div class="f"><label>Hora</label><input name="hora" value="${esc(C.hora)}"></div>
+    <div class="f"><label>Lugar</label><input name="lugar" value="${esc(C.lugar)}"></div>
+    <div class="f"><label>Capacidad máxima del salón</label><input name="capacidad" type="number" value="${C.capacidad}"></div>
+    <div class="f"><label>Otros lugares reservados (sin nombre)</label><input name="reserva_otros" type="number" value="${C.reserva_otros}"></div>
+    <div class="f"><label>Cupo inicial por defecto (egresados nuevos)</label><input name="cupo_inicial_default" type="number" value="${C.cupo_inicial_default}"></div>
+    <div class="f"><label>Horas de reserva esperando pago (0 = sin vencimiento)</label><input name="horas_reserva" type="number" value="${C.horas_reserva}"></div>
+  </div>
+  <h3>Tarjetas</h3><div class="fg">
+    <div class="f"><label>Menú activo (define el precio)</label><select name="menu_activo">${menus.map(m => opt(m, m, C.menu_activo)).join('')}</select></div>
+    <div class="f"><label>Edad máx. "bebé" (no paga)</label><input name="edad_max_bebe" type="number" value="${C.edad_max_bebe}"></div>
+    <div class="f"><label>Edad máx. "menor"</label><input name="edad_max_menor" type="number" value="${C.edad_max_menor}"></div>
+    <div class="f"><label>&nbsp;</label><label class="row"><input type="checkbox" name="egresado_paga_tarjeta" style="width:auto" ${C.egresado_paga_tarjeta ? 'checked' : ''}> El egresado paga su propia tarjeta</label></div>
+  </div>
+  <div class="scroll" style="margin-bottom:12px"><table id="precios"><tr><th>Menú</th><th>Adulto</th><th>Menor</th><th>Bebé</th></tr>
+    ${menus.map(m => `<tr><td><b>${esc(m)}</b></td>${['adulto', 'menor', 'bebe'].map(c => `<td><input data-m="${esc(m)}" data-c="${c}" type="number" value="${pv(m, c)}" style="max-width:130px"></td>`).join('')}</tr>`).join('')}
+    <tr><td><input id="nuevo-menu" placeholder="Nuevo menú…" style="max-width:150px"></td>${['adulto', 'menor', 'bebe'].map(c => `<td><input data-new="${c}" type="number" style="max-width:130px"></td>`).join('')}</tr></table></div>
+  <h3>Brindis / fiesta</h3><div class="fg">
+    <div class="f"><label>Cupo de pulseras</label><input name="cupo_brindis" type="number" value="${C.cupo_brindis}"></div>
+    <div class="f"><label>Precio base (Club)</label><input name="precio_brindis_base" type="number" value="${C.precio_brindis_base}"></div>
+    <div class="f"><label>Adicional promoción</label><input name="precio_brindis_adicional" type="number" value="${C.precio_brindis_adicional}"></div>
+    <div class="f"><label>Máx. por egresado (0 = sin límite)</label><input name="brindis_max_por_egresado" type="number" value="${C.brindis_max_por_egresado}"></div>
+    <div class="f"><label>&nbsp;</label><label class="row"><input type="checkbox" name="brindis_suma_aforo" style="width:auto" ${C.brindis_suma_aforo ? 'checked' : ''}> Las pulseras cuentan dentro de las ${C.capacidad} personas</label></div>
+  </div>
+  <div class="f"><label>Datos para pagar (alias, CBU, link de Mercado Pago…) — lo ven los egresados</label><textarea name="datos_pago" rows="3">${esc(C.datos_pago)}</textarea></div>
+  <button class="btn p" id="cfg-save">Guardar configuración</button></div>
+
+  <div class="card"><div class="row sb"><h3 style="margin:0">Usuarios (administradores y acreditadores)</h3><button class="btn" id="u-add">+ Usuario</button></div>
+    <div class="list">${U.map(u => `<div class="it"><div><div class="n">${esc(u.nombre)} <span class="b ${u.activo ? 'confirmado' : 'cancelado'}">${u.rol.toUpperCase()}</span></div><div class="small muted">usuario: ${esc(u.usuario)}${u.activo ? '' : ' · desactivado'}</div></div>
+      <div class="row"><button class="btn s" data-u="${u.id}">Cambiar PIN</button><button class="btn s ${u.activo ? 'bad' : ''}" data-ua="${u.id}">${u.activo ? 'Desactivar' : 'Activar'}</button></div></div>`).join('')}</div></div>
+
+  <div class="card"><h3>Backup</h3><p class="small muted">Descargá una copia completa de la base (JSON) y una planilla con todo. Recomendado: una vez por semana y el día del evento antes de abrir la puerta.</p>
+    <div class="row"><button class="btn p" id="bk-json">Descargar backup completo (JSON)</button><button class="btn" onclick="admTab('exportar')">Ir a exportaciones</button></div></div>
+
+  <div class="card"><h3>Registro de cambios (últimos 200)</h3><div class="scroll" style="max-height:50vh"><table><tr><th>Fecha</th><th>Quién</th><th>Acción</th><th>Detalle</th></tr>
+    ${AU.map(a => `<tr><td>${fmtDT(a.fecha)}</td><td>${esc(a.actor)}</td><td>${esc(a.accion)}</td><td class="wrap small" style="max-width:520px">${esc(JSON.stringify(a.detalle || '')).slice(0, 300)}</td></tr>`).join('')}</table></div></div>`;
+  $('#cfg-save').onclick = () => run(async () => {
+    const d = formData($('#cfg'));
+    d.precios = $$('#precios [data-m]').map(i => ({ menu: i.dataset.m, categoria: i.dataset.c, precio: +i.value || 0 }));
+    const nm = $('#nuevo-menu').value.trim();
+    if (nm) $$('#precios [data-new]').forEach(i => d.precios.push({ menu: nm, categoria: i.dataset.new, precio: +i.value || 0 }));
+    await rpc('guardar_config', { p_token: T(), p_data: d });
+  }, 'Configuración guardada').then(() => admTab('config'));
+  $('#u-add').onclick = async () => {
+    const r = await modal('Nuevo usuario', `<div class="fg"><div class="f"><label>Usuario</label><input name="usuario" autocapitalize="none"></div><div class="f"><label>Nombre</label><input name="nombre"></div>
+      <div class="f"><label>Rol</label><select name="rol"><option value="acreditador">Acreditador (solo puerta)</option><option value="admin">Administrador (todo)</option></select></div><div class="f"><label>PIN (mín. 6 números)</label><input name="pin" inputmode="numeric"></div></div>`,
+      { actions: [{ t: 'Cancelar', v: null }, { t: 'Crear', c: 'p', fn: ov => rpc('guardar_usuario', { p_token: T(), p_data: formData(ov) }) }] });
+    if (r) admTab('config');
+  };
+  $$('[data-u]').forEach(b => b.onclick = async () => { const r = await modal('Cambiar PIN', `<div class="f"><label>Nuevo PIN</label><input name="pin" inputmode="numeric"></div>`, { actions: [{ t: 'Cancelar', v: null }, { t: 'Guardar', c: 'p', fn: ov => rpc('guardar_usuario', { p_token: T(), p_data: { id: +b.dataset.u, pin: formData(ov).pin } }) }] }); if (r) toast('PIN actualizado'); });
+  $$('[data-ua]').forEach(b => b.onclick = () => { const u = U.find(x => x.id === +b.dataset.ua); run(() => rpc('guardar_usuario', { p_token: T(), p_data: { id: u.id, activo: !u.activo } }), 'Guardado').then(() => admTab('config')); });
+  $('#bk-json').onclick = () => run(async () => {
+    const d = await rpc('backup_completo', { p_token: T() });
+    const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([JSON.stringify(d, null, 1)], { type: 'application/json' }));
+    a.download = `backup-egreso-${new Date().toISOString().slice(0, 16).replace(/[:T]/g, '-')}.json`; a.click();
+  }, 'Backup descargado');
+}
+
+// ---- Exportaciones
+async function exportar(nombre, hojas, fmt = 'xlsx') {
+  await loadScript(LIB.xlsx);
+  const stamp = new Date().toISOString().slice(0, 10);
+  if (fmt === 'csv') {
+    hojas.forEach(h => { const ws = XLSX.utils.json_to_sheet(h.rows.length ? h.rows : [{ '(sin datos)': '' }]);
+      const csv = '﻿' + XLSX.utils.sheet_to_csv(ws, { FS: ';' });
+      const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
+      a.download = `${nombre}${hojas.length > 1 ? '_' + h.n : ''}_${stamp}.csv`; a.click(); });
+    return;
+  }
+  const wb = XLSX.utils.book_new();
+  hojas.forEach(h => { const ws = XLSX.utils.json_to_sheet(h.rows.length ? h.rows : [{ '(sin datos)': '' }]);
+    const keys = Object.keys(h.rows[0] || { x: 1 }); ws['!cols'] = keys.map(k => ({ wch: Math.min(40, Math.max(k.length, ...h.rows.slice(0, 200).map(r => String(r[k] ?? '').length)) + 2) }));
+    XLSX.utils.book_append_sheet(wb, ws, h.n.slice(0, 31)); });
+  XLSX.writeFile(wb, `${nombre}_${stamp}.xlsx`);
+}
+async function admExportar() {
+  $('#main').innerHTML = `<h2>Exportaciones</h2>
+  <div class="card"><div class="row" style="margin-bottom:10px"><label style="margin:0">Formato:</label><select id="x-fmt" style="width:auto"><option value="xlsx">Excel (.xlsx)</option><option value="csv">CSV (;)</option></select></div>
+  <div class="list">${[
+      ['completa', '1. Lista completa de invitados', 'Todos los datos de cada persona (cena).'],
+      ['sarmiento', '2. Lista para Club Sarmiento', 'Nombre | Apellido | DNI | Edad/categoría | Mesa | Restricción alimentaria. Solo confirmados.'],
+      ['egresado', '3. Invitados por egresado', 'Ordenados por egresado responsable.'],
+      ['mesa', '4. Invitados por mesa', 'Ordenados por mesa y apellido.'],
+      ['restric', '5. Restricciones alimentarias por mesa', 'Resumen por mesa + detalle de cada persona con restricción.'],
+      ['pagos', '6. Estado de pagos', 'Precio, pagado, saldo y estado de cada invitado + historial de pagos.'],
+      ['acred', '7. Lista de acreditación / ingreso', 'Orden alfabético con estado y hora de ingreso.'],
+      ['brindis', '8. Lista del brindis', 'Pulsera, datos, pago e ingreso.'],
+      ['finanzas', '9. Resumen financiero por egresado', 'Cupos, cobrado y pendiente por egresado.'],
+      ['todo', 'Todo en un solo Excel', 'Las 9 hojas juntas.']
+    ].map(([k, t, d]) => `<div class="it"><div><div class="n">${t}</div><div class="small muted">${d}</div></div><button class="btn s p" data-x="${k}">Descargar</button></div>`).join('')}</div></div>
+  <div class="card"><h3>Impresiones de respaldo</h3><div class="row">
+    <button class="btn" id="pr-acred">Lista impresa para la entrada (cena)</button><button class="btn" id="pr-brindis">Lista impresa brindis</button><button class="btn" id="pr-mesas">Reporte por mesa</button></div></div>`;
+  $$('[data-x]').forEach(b => b.onclick = () => run(async () => {
+    const [invs, br, pagos] = await Promise.all([rpc('listar_invitados', { p_token: T() }), rpc('listar_brindis', { p_token: T() }), rpc('listar_pagos', { p_token: T() })]);
+    const H = hojasExport(invs, br, pagos); const k = b.dataset.x, fmt = $('#x-fmt').value;
+    if (k === 'todo') return exportar('egreso_completo', Object.values(H).flat(), fmt);
+    return exportar(H[k][0].file, H[k], fmt);
+  }));
+  $('#pr-acred').onclick = async () => imprimirAcreditacion(await rpc('listar_invitados', { p_token: T() }));
+  $('#pr-brindis').onclick = async () => imprimirBrindis(await rpc('listar_brindis', { p_token: T() }));
+  $('#pr-mesas').onclick = async () => imprimirMesas(await rpc('listar_invitados', { p_token: T() }), ADM.dash.mesas);
+}
+function hojasExport(invs, br, pagos) {
+  const C = ADM.dash.config, byAp = (a, b) => a.apellido.localeCompare(b.apellido) || a.nombre.localeCompare(b.nombre);
+  const mesaN = i => i.mesa ?? 9999;
+  const full = i => ({ Entrada: i.codigo, Egresado: i.responsable, 'Egresado nombre': i.responsable_nombre, Apellido: i.apellido, Nombre: i.nombre, DNI: i.dni, Edad: i.edad,
+    Categoría: catLabel(i.categoria, C), Vínculo: i.vinculo, Restricción: i.restriccion, 'Detalle restricción': i.restriccion_detalle, Observaciones: i.observaciones,
+    Mesa: i.mesa ?? '', Estado: i.ingreso_at ? 'ingresó' : i.estado, Precio: i.precio, Pagado: i.pagado, Saldo: i.precio - i.pagado, 'Ingreso': i.ingreso_at ? fmtDT(i.ingreso_at) : '' });
+  const R = ADM.dash.responsables;
+  return {
+    completa: [{ file: 'invitados_completo', n: 'Invitados', rows: [...invs].sort((a, b) => a.responsable_id - b.responsable_id || a.codigo.localeCompare(b.codigo)).map(full) }],
+    sarmiento: [{ file: 'lista_club_sarmiento', n: 'Club Sarmiento', rows: invs.filter(i => i.estado === 'confirmado').sort((a, b) => mesaN(a) - mesaN(b) || byAp(a, b)).map(i => ({
+      Nombre: i.nombre, Apellido: i.apellido, DNI: i.dni, Edad: i.edad, Categoría: catLabel(i.categoria, C), Mesa: i.mesa ?? 'Sin asignar',
+      'Restricción alimentaria': i.restriccion === 'Sin restricción' ? '' : restrTxt(i), Observaciones: i.observaciones })) }],
+    egresado: [{ file: 'invitados_por_egresado', n: 'Por egresado', rows: [...invs].sort((a, b) => a.responsable.localeCompare(b.responsable) || a.codigo.localeCompare(b.codigo)).map(full) }],
+    mesa: [{ file: 'invitados_por_mesa', n: 'Por mesa', rows: [...invs].sort((a, b) => mesaN(a) - mesaN(b) || byAp(a, b)).map(i => ({ Mesa: i.mesa ?? 'Sin asignar', ...full(i) })) }],
+    restric: [
+      { file: 'restricciones_por_mesa', n: 'Resumen por mesa', rows: [...new Set(invs.map(mesaN))].sort((a, b) => a - b).map(m => { const L = invs.filter(i => mesaN(i) === m);
+        return { Mesa: m === 9999 ? 'Sin asignar' : m, Personas: L.length, Celíacos: L.filter(i => i.restriccion === 'Celíaco').length, Vegetarianos: L.filter(i => i.restriccion === 'Vegetariano').length,
+          Hipertensos: L.filter(i => i.restriccion === 'Hipertenso').length, Otras: L.filter(i => i.restriccion === 'Otra').length, 'Menús comunes': L.filter(i => i.restriccion === 'Sin restricción').length }; }) },
+      { n: 'Detalle restricciones', rows: invs.filter(i => i.restriccion !== 'Sin restricción').sort((a, b) => mesaN(a) - mesaN(b) || byAp(a, b)).map(i => ({ Mesa: i.mesa ?? 'Sin asignar', Apellido: i.apellido, Nombre: i.nombre, DNI: i.dni, Categoría: catLabel(i.categoria, C), Restricción: restrTxt(i), Observaciones: i.observaciones, Entrada: i.codigo })) }],
+    pagos: [
+      { file: 'estado_de_pagos', n: 'Estado por invitado', rows: [...invs].sort((a, b) => a.codigo.localeCompare(b.codigo)).map(i => ({ Entrada: i.codigo, Egresado: i.responsable, Apellido: i.apellido, Nombre: i.nombre, Categoría: catLabel(i.categoria, C), Estado: i.vencido ? 'vencido' : i.estado, Precio: i.precio, Pagado: i.pagado, 'Informado s/verificar': i.informado, Saldo: i.precio - i.pagado, 'Reserva vence': i.vence_en ? fmtDT(i.vence_en) : '' })) },
+      { n: 'Historial pagos', rows: pagos.map(p => ({ Fecha: fmtDT(p.creado), Entrada: p.codigo, Invitado: p.nombre, Egresado: p.responsable, Monto: p.monto, Medio: p.medio, Referencia: p.referencia, Estado: p.estado, 'Registró': p.registrado_por || p.informado_por })) }],
+    acred: [{ file: 'lista_acreditacion', n: 'Acreditación', rows: [...invs].sort(byAp).map(i => ({ Apellido: i.apellido, Nombre: i.nombre, DNI: i.dni, Entrada: i.codigo, Mesa: i.mesa ?? '', Restricción: i.restriccion === 'Sin restricción' ? '' : restrTxt(i), Estado: i.estado, 'Hora ingreso': i.ingreso_at ? fmtDT(i.ingreso_at) : '' })) }],
+    brindis: [{ file: 'lista_brindis', n: 'Brindis', rows: br.map(b => ({ Pulsera: b.codigo || '', Apellido: b.apellido, Nombre: b.nombre, DNI: b.dni, Egresado: b.responsable, 'Egresado nombre': b.responsable_nombre, Pagado: b.pagado ? 'Sí' : 'No', Monto: b.monto, Medio: b.medio, Ingresó: b.ingreso_at ? 'Sí' : 'No', 'Hora ingreso': b.ingreso_at ? fmtDT(b.ingreso_at) : '' })) }],
+    finanzas: [{ file: 'resumen_financiero', n: 'Finanzas por egresado', rows: R.filter(r => r.activo).map(r => ({ Código: r.codigo, Nombre: `${r.nombre} ${r.apellido}`, 'Cupo inicial': r.cupo_inicial, 'Extras solicitados': r.extras_solicitados, 'Extras asignados': r.cupo_extra, Liberado: r.cupo_liberado, 'Cupo actual': r.cupo, Utilizado: r.usados, Pagados: r.pagados, Pendientes: r.pendientes, 'Cena esperado': r.esperado, 'Cena cobrado': r.cobrado, 'Cena pendiente': r.esperado - r.cobrado, 'Brindis (personas)': r.brindis, 'Brindis cobrado': r.brindis_cobrado, 'Total a rendir (cobrado)': r.cobrado + r.brindis_cobrado })) }]
+  };
+}
+function imprimirAcreditacion(invs) {
+  const C = CFG, L = invs.filter(i => i.estado !== 'cancelado').sort((a, b) => a.apellido.localeCompare(b.apellido) || a.nombre.localeCompare(b.nombre));
+  imprimir('Lista de acreditación', `<h1>${esc(C.evento)} – Lista de ingreso (cena)</h1><div class="muted">${fmtFecha(C.fecha)} · ${esc(C.lugar)} · generada ${new Date().toLocaleString('es-AR')} · Solo pueden ingresar los CONFIRMADOS.</div><br>
+  <table><tr><th>✓</th><th>Apellido y nombre</th><th>DNI</th><th>Entrada</th><th>Mesa</th><th>Restricción</th><th>Estado</th></tr>
+  ${L.map(i => `<tr><td><span class="box"></span></td><td><b>${esc(i.apellido)}</b>, ${esc(i.nombre)}</td><td>${esc(i.dni)}</td><td>${esc(i.codigo)}</td><td>${i.mesa ?? ''}</td><td>${i.restriccion !== 'Sin restricción' ? esc(restrTxt(i)) : ''}</td><td>${i.estado === 'confirmado' ? 'CONFIRMADO' : '<b>NO HABILITADO (' + i.estado + ')</b>'}${i.ingreso_at ? ' · ingresó ' + fmtDT(i.ingreso_at) : ''}</td></tr>`).join('')}</table>`);
+}
+function imprimirBrindis(br) {
+  const C = CFG, L = [...br].sort((a, b) => (a.pulsera || 1e9) - (b.pulsera || 1e9));
+  imprimir('Lista brindis', `<h1>${esc(C.evento)} – Lista del brindis</h1><div class="muted">Solo ingresan con pulsera asignada Y pago registrado.</div><br>
+  <table><tr><th>✓</th><th>Pulsera</th><th>Apellido y nombre</th><th>DNI</th><th>Invita</th><th>Pagado</th></tr>
+  ${L.map(b => `<tr><td><span class="box"></span></td><td><b>${b.codigo || '—'}</b></td><td>${esc(b.apellido)}, ${esc(b.nombre)}</td><td>${esc(b.dni)}</td><td>${esc(b.responsable)} ${esc(b.responsable_nombre)}</td><td>${b.pagado ? 'SÍ' : '<b>NO</b>'}</td></tr>`).join('')}</table>`);
+}
+
+// =====================================================================
+//  ACREDITACIÓN (check-in) – optimizada para celular
+// =====================================================================
+const CI = { modo: 'cena', scanner: null, lista: null };
+async function viewCheckin(embedded = false) {
+  if (!embedded) { shell(`Acreditación · ${S.nombre}`, null); }
+  const box = $('#main');
+  box.innerHTML = `<div style="max-width:640px;margin:0 auto">
+    <div class="row sb" style="margin-bottom:10px"><div class="row"><button class="btn ${CI.modo === 'cena' ? 'p' : ''}" data-modo="cena">Cena (QR)</button><button class="btn ${CI.modo === 'brindis' ? 'p' : ''}" data-modo="brindis">Brindis (pulsera)</button></div>
+      <div class="small muted" id="ci-stats"></div></div>
+    <div id="ci-net"></div>
+    <div class="ci-search"><input id="ci-q" placeholder="${CI.modo === 'cena' ? 'Apellido, nombre, DNI o entrada' : 'N° pulsera, apellido o DNI'}" autocomplete="off" inputmode="search">
+      ${CI.modo === 'cena' ? '<button class="btn p" id="ci-scan">📷 QR</button>' : ''}</div>
+    <div id="reader"></div><div id="ci-res"></div>
+    <div class="row no-print" style="margin-top:18px"><button class="btn s" id="ci-refresh">Actualizar lista offline</button><button class="btn s" id="ci-print">Imprimir lista de respaldo</button></div>
+  </div>`;
+  $$('[data-modo]').forEach(b => b.onclick = () => { CI.modo = b.dataset.modo; stopScan(); viewCheckin(embedded); });
+  const q = $('#ci-q'); let tmr;
+  q.oninput = () => { clearTimeout(tmr); tmr = setTimeout(() => buscarCI(q.value), 350); };
+  q.onkeydown = e => { if (e.key === 'Enter') { clearTimeout(tmr); buscarCI(q.value); } };
+  if ($('#ci-scan')) $('#ci-scan').onclick = () => CI.scanner ? stopScan() : startScan();
+  $('#ci-refresh').onclick = () => cargarListaCI(true);
+  $('#ci-print').onclick = async () => { await cargarListaCI(); const Lc = CI.lista?.cena || [];
+    if (CI.modo === 'brindis') return imprimirBrindis(CI.lista?.brindis || []);
+    imprimirAcreditacion(Lc.map(x => ({ nombre: x.n, apellido: x.a, dni: x.d, codigo: x.c, mesa: x.m, restriccion: x.r.startsWith('Otra') ? 'Otra' : x.r, restriccion_detalle: x.r.replace(/^Otra: /, ''), estado: x.e, ingreso_at: x.in }))); };
+  cargarListaCI();
+  const pend = store.get('egreso_pending_qr'); if (pend) { store.del('egreso_pending_qr'); buscarCI(pend, true); }
+  if (!('ontouchstart' in window)) q.focus();
+}
+async function cargarListaCI(force) {
+  try {
+    CI.lista = await rpc('checkin_lista', { p_token: T() });
+    if (!CFG) CFG = { ...CI.lista.config };
+    store.set('egreso_lista_ci', { t: Date.now(), d: CI.lista });
+    const s = CI.lista.stats;
+    if ($('#ci-stats')) $('#ci-stats').innerHTML = CI.modo === 'cena' ? `Ingresados <b>${s.ingresados}</b> / ${s.confirmados}` : `Brindis <b>${s.brindis_ingresados}</b> / ${s.brindis_habilitados}`;
+    if ($('#ci-net')) $('#ci-net').innerHTML = '';
+    if (force) toast('Lista actualizada');
+  } catch (e) {
+    const c = store.get('egreso_lista_ci'); if (c) CI.lista = c.d;
+    if ($('#ci-net')) $('#ci-net').innerHTML = `<div class="notice warn">Sin conexión. ${c ? `Búsqueda con lista guardada (${fmtDT(c.t)}). Para registrar ingresos hace falta conexión; si no vuelve, usar la lista impresa.` : ''}</div>`;
+  }
+}
+async function buscarCI(q, auto) {
+  q = (q || '').trim(); const res = $('#ci-res'); if (!res) return;
+  if (q.length < (CI.modo === 'brindis' ? 1 : 2)) { res.innerHTML = ''; return; }
+  res.innerHTML = '<div class="empty">Buscando…</div>';
+  let L;
+  try {
+    L = await rpc(CI.modo === 'cena' ? 'checkin_buscar' : 'brindis_buscar', { p_token: T(), p_q: q });
+    if ($('#ci-net')) $('#ci-net').innerHTML = '';
+  } catch (e) {
+    if (!e.offline) { res.innerHTML = `<div class="notice bad">${esc(e.message)}</div>`; return; }
+    return buscarOffline(q);
+  }
+  if (!L.length) { res.innerHTML = `<div class="ci-card" style="border-color:var(--bad);background:var(--bad-bg)"><div class="name" style="color:var(--bad)">NO REGISTRADO</div><div>No figura en el sistema. No puede ingresar.</div></div>`; return; }
+  if (auto && CI.modo === 'cena' && L[0].ingreso_at) { cardCI(L[0]); return resultado('bad', 'ENTRADA YA UTILIZADA', L[0], L[0].ingreso_at); }
+  if (L.length === 1 || auto) return cardCI(L[0]);
+  res.innerHTML = L.map((x, k) => `<div class="ci-row" data-k="${k}"><div><div class="n">${esc(x.apellido)}, ${esc(x.nombre)}</div><div class="small muted">${CI.modo === 'cena' ? `${esc(x.codigo)} · DNI ${esc(x.dni)} · Mesa ${x.mesa ?? '—'}` : `${x.codigo || 'sin pulsera'} · DNI ${esc(x.dni)}`}</div></div>
+    <div>${CI.modo === 'cena' ? estadoBadge(x) : x.ingreso_at ? '<span class="b ing">INGRESÓ</span>' : x.pagado ? '<span class="b confirmado">PAGADO</span>' : '<span class="b pendiente">NO PAGÓ</span>'}</div></div>`).join('');
+  $$('.ci-row', res).forEach(r => r.onclick = () => cardCI(L[+r.dataset.k]));
+}
+function buscarOffline(q) {
+  const res = $('#ci-res'), L0 = CI.lista; if (!L0) { res.innerHTML = '<div class="notice bad">Sin conexión y sin lista guardada. Usar la lista impresa.</div>'; return; }
+  const n = s => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); const qq = n(q);
+  const L = CI.modo === 'cena' ? L0.cena.filter(x => n(`${x.n} ${x.a} ${x.a} ${x.n} ${x.d} ${x.c}`).includes(qq)).slice(0, 20)
+    : L0.brindis.filter(x => n(`${x.nombre} ${x.apellido} ${x.dni} ${x.codigo}`).includes(qq)).slice(0, 20);
+  res.innerHTML = `<div class="notice warn">SIN CONEXIÓN · datos de la lista guardada. No se puede registrar el ingreso hasta que vuelva la señal.</div>` +
+    (L.map(x => CI.modo === 'cena' ? `<div class="ci-row"><div><div class="n">${esc(x.a)}, ${esc(x.n)}</div><div class="small muted">${esc(x.c)} · DNI ${esc(x.d)} · Mesa ${x.m ?? '—'} · ${esc(x.r)}</div></div><div><span class="b ${x.in ? 'ing' : x.e}">${x.in ? 'INGRESÓ' : x.e.toUpperCase()}</span></div></div>`
+      : `<div class="ci-row"><div><div class="n">${esc(x.apellido)}, ${esc(x.nombre)}</div><div class="small muted">${x.codigo || 'sin pulsera'} · DNI ${esc(x.dni)}</div></div><div>${x.pagado ? 'PAGADO' : 'NO PAGÓ'}</div></div>`).join('') || '<div class="empty">Sin resultados</div>');
+}
+function cardCI(x) {
+  const res = $('#ci-res');
+  if (CI.modo === 'cena') {
+    const ok = x.estado === 'confirmado' && !x.ingreso_at;
+    const col = x.ingreso_at ? 'var(--bad)' : ok ? 'var(--ok)' : 'var(--warn)';
+    res.innerHTML = `<div class="ci-card" style="border-color:${col}">
+      <div class="name">${esc(x.nombre)} ${esc(x.apellido)}</div>
+      <div class="kv"><span>Entrada:</span><b>${esc(x.codigo)}</b><span>Mesa:</span><b>${x.mesa ?? 'Sin asignar'}</b>
+        <span>Restricción:</span><b class="${x.restriccion !== 'Sin restricción' ? 'restr' : ''}">${esc(restrTxt(x)).toUpperCase()}</b>
+        <span>Categoría:</span><b>${catLabel(x.categoria)}</b><span>DNI:</span><b>${esc(x.dni)}</b>
+        <span>Estado:</span><b style="color:${col}">${x.ingreso_at ? 'YA INGRESÓ ' + fmtDT(x.ingreso_at) : x.estado.toUpperCase()}</b>
+        <span>Invita:</span><b>${esc(x.responsable)} ${esc(x.responsable_nombre)}</b></div>
+      ${x.observaciones ? `<div class="small" style="margin-top:8px">Obs.: ${esc(x.observaciones)}</div>` : ''}
+      <button class="bigbtn" id="ci-go" ${ok ? '' : 'disabled'}>${x.ingreso_at ? 'ENTRADA YA UTILIZADA' : ok ? 'REGISTRAR INGRESO' : 'NO HABILITADO – ' + x.estado.toUpperCase()}</button></div>`;
+    if (ok) $('#ci-go').onclick = async e => {
+      e.target.disabled = true;
+      try { const r = await rpc('checkin_registrar', { p_token: T(), p_id: x.id }); resultado(r.ok ? 'ok' : 'bad', r.mensaje, x, r.ingreso_at); }
+      catch (err) { e.target.disabled = false; toast(err.message, true); }
+    };
+  } else {
+    const ok = x.pagado && x.codigo && !x.ingreso_at;
+    const col = x.ingreso_at ? 'var(--bad)' : ok ? 'var(--ok)' : 'var(--warn)';
+    res.innerHTML = `<div class="ci-card" style="border-color:${col}"><div class="name">${esc(x.nombre)} ${esc(x.apellido)}</div>
+      <div class="kv"><span>Pulsera:</span><b style="font-size:26px">${x.codigo || 'SIN ASIGNAR'}</b><span>DNI:</span><b>${esc(x.dni)}</b><span>Invita:</span><b>${esc(x.responsable)} ${esc(x.responsable_nombre)}</b>
+      <span>Pagado:</span><b style="color:${x.pagado ? 'var(--ok)' : 'var(--bad)'}">${x.pagado ? 'SÍ' : 'NO'}</b>${x.ingreso_at ? `<span>Ingresó:</span><b style="color:var(--bad)">${fmtDT(x.ingreso_at)}</b>` : ''}</div>
+      <p class="small">Verificar que el número de la pulsera coincida y el DNI.</p>
+      <button class="bigbtn" id="ci-go" ${ok ? '' : 'disabled'}>${x.ingreso_at ? 'YA INGRESÓ' : ok ? 'REGISTRAR INGRESO' : !x.codigo ? 'SIN PULSERA ASIGNADA' : 'NO PAGADO'}</button></div>`;
+    if (ok) $('#ci-go').onclick = async e => {
+      e.target.disabled = true;
+      try { const r = await rpc('brindis_registrar', { p_token: T(), p_id: x.id }); resultado(r.ok ? 'ok' : 'bad', r.mensaje, { ...x, codigo: x.codigo }, r.ingreso_at); }
+      catch (err) { e.target.disabled = false; toast(err.message, true); }
+    };
+  }
+}
+function resultado(tipo, msg, x, cuando) {
+  try { navigator.vibrate && navigator.vibrate(tipo === 'ok' ? 120 : [200, 100, 200]); } catch (e) { }
+  const d = document.createElement('div'); d.className = 'res ' + tipo;
+  d.innerHTML = `<div class="m">${esc(msg)}</div><div class="n">${esc(x.nombre)} ${esc(x.apellido)}</div>
+    <div class="d">${esc(x.codigo || '')}${x.mesa ? ' · MESA ' + x.mesa : ''}${x.restriccion && x.restriccion !== 'Sin restricción' ? ' · ' + esc(restrTxt(x)).toUpperCase() : ''}</div>
+    ${cuando ? `<div class="d">Ingresó: ${fmtDT(cuando)}</div>` : ''}<div class="x">Tocá para continuar</div>`;
+  d.onclick = () => { d.remove(); $('#ci-res').innerHTML = ''; const q = $('#ci-q'); if (q) { q.value = ''; if (!('ontouchstart' in window)) q.focus(); } cargarListaCI(); };
+  document.body.appendChild(d);
+}
+async function startScan() {
+  try { await loadScript(LIB.scan); } catch (e) { return toast('No se pudo cargar el lector de QR. Buscá manualmente.', true); }
+  $('#ci-scan').textContent = '✕ Cerrar';
+  CI.scanner = new Html5Qrcode('reader');
+  try {
+    await CI.scanner.start({ facingMode: 'environment' }, { fps: 10, qrbox: { width: 240, height: 240 } }, txt => {
+      stopScan();
+      const m = txt.match(/e=([0-9a-f]{32})/) || txt.match(/^([0-9a-f]{32})$/);
+      if (!m) { resultado('bad', 'QR NO VÁLIDO', { nombre: 'Este QR no es', apellido: 'una entrada del evento' }); return; }
+      buscarCI(m[1], true);
+    });
+  } catch (e) { toast('No se pudo abrir la cámara: ' + (e.message || e), true); stopScan(); }
+}
+function stopScan() {
+  if (CI.scanner) { const s = CI.scanner; CI.scanner = null; s.stop().catch(() => { }).finally(() => { try { s.clear(); } catch (e) { } }); }
+  if ($('#ci-scan')) $('#ci-scan').textContent = '📷 QR';
+}
+
+route();
+</script>
+</body>
+</html>
