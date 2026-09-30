@@ -8,16 +8,16 @@
 <title>Promo KAOS · Egreso 2026</title>
 <script src="config.js"></script>
 <style>
-@font-face{font-family:"Playfair Display";font-weight:500;font-display:swap;src:url(lib/fonts/playfair-display-latin-500-normal.woff2) format("woff2")}
-@font-face{font-family:"Playfair Display";font-weight:600;font-display:swap;src:url(lib/fonts/playfair-display-latin-600-normal.woff2) format("woff2")}
-@font-face{font-family:"Playfair Display";font-weight:700;font-display:swap;src:url(lib/fonts/playfair-display-latin-700-normal.woff2) format("woff2")}
-@font-face{font-family:"Playfair Display";font-weight:800;font-display:swap;src:url(lib/fonts/playfair-display-latin-800-normal.woff2) format("woff2")}
-@font-face{font-family:"Playfair Display";font-weight:900;font-display:swap;src:url(lib/fonts/playfair-display-latin-900-normal.woff2) format("woff2")}
-@font-face{font-family:Inter;font-weight:400;font-display:swap;src:url(lib/fonts/inter-latin-400-normal.woff2) format("woff2")}
-@font-face{font-family:Inter;font-weight:500;font-display:swap;src:url(lib/fonts/inter-latin-500-normal.woff2) format("woff2")}
-@font-face{font-family:Inter;font-weight:600;font-display:swap;src:url(lib/fonts/inter-latin-600-normal.woff2) format("woff2")}
-@font-face{font-family:Inter;font-weight:700;font-display:swap;src:url(lib/fonts/inter-latin-700-normal.woff2) format("woff2")}
-@font-face{font-family:Sacramento;font-weight:400;font-display:swap;src:url(lib/fonts/sacramento-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Playfair Display";font-weight:500;font-display:swap;src:url(playfair-display-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Playfair Display";font-weight:600;font-display:swap;src:url(playfair-display-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Playfair Display";font-weight:700;font-display:swap;src:url(playfair-display-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Playfair Display";font-weight:800;font-display:swap;src:url(playfair-display-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:"Playfair Display";font-weight:900;font-display:swap;src:url(playfair-display-latin-900-normal.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:400;font-display:swap;src:url(inter-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:500;font-display:swap;src:url(inter-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:600;font-display:swap;src:url(inter-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:700;font-display:swap;src:url(inter-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:Sacramento;font-weight:400;font-display:swap;src:url(sacramento-latin-400-normal.woff2) format("woff2")}
 :root{
   --bg:#f6efdf; --card:#fffcf5; --ink:#2a1552; --muted:#6f6488; --line:#e8dfcb;
   --brand:#3b1a78; --brand2:#4d2a94; --accent:#b39ae8; --lila:#9b7fd6;
@@ -194,9 +194,9 @@ function loadScript(src) {
   return loaded[src];
 }
 const LIB = {
-  qr: 'lib/qrcode.js',
-  xlsx: 'lib/xlsx.full.min.js',
-  scan: 'lib/html5-qrcode.min.js'
+  qr: 'qrcode.js',
+  xlsx: 'xlsx.full.min.js',
+  scan: 'html5-qrcode.min.js'
 };
 
 // =====================================================================
